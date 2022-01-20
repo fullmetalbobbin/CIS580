@@ -9,9 +9,9 @@ namespace HelloGame
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
-        private Vector2 _butterballPosition;
-        private Vector2 _butterballVelocity;
-        private Texture2D _butterballTexture;
+        private Vector2 _ballPosition;
+        private Vector2 _ballVelocity;
+        private Texture2D _ballTexture;
 
         /// <summary>
         /// Construction of the game
@@ -30,17 +30,16 @@ namespace HelloGame
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-            _butterballPosition = new Vector2(
+            _ballPosition = new Vector2(
                 GraphicsDevice.Viewport.Width/2,
                 GraphicsDevice.Viewport.Height/2
                 );
 
             System.Random randomChaos = new System.Random();
-            _butterballVelocity = new Vector2(
+            _ballVelocity = new Vector2(
                 (float)randomChaos.NextDouble(),
                 (float)randomChaos.NextDouble()
                 );
-
 
             base.Initialize();      //base refers back to this Game class
         }
@@ -53,6 +52,7 @@ namespace HelloGame
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            _ballTexture = Content.Load<Texture2D>("ball");
         }
 
         /// <summary>
