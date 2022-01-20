@@ -98,6 +98,9 @@ namespace HelloGame
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
+            _spriteBatch.Begin();
+            _spriteBatch.Draw(_ballTexture, _ballPosition, Color.White);
+            _spriteBatch.End();
 
             base.Draw(gameTime);        //base refers back to this Game class
         }
