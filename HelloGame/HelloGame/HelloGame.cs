@@ -65,6 +65,23 @@ namespace HelloGame
                 Exit();
 
             // TODO: Add your update logic here
+            _ballPosition += _ballVelocity * (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+            //if ball reaches X-axis (left/right) boundaries we want it to turn around
+            // 64 subtracted on right to account for width of ball image
+            if (_ballPosition.X < GraphicsDevice.Viewport.X ||
+                _ballPosition.X > GraphicsDevice.Viewport.Width - 64)
+            {
+                _ballVelocity.X *= -1;  //will turn ball around!
+            }
+
+            //if ball reaches Y-axis (top/bottom) boundaries we want it to turn around
+            // 64 subtracted on bottom to account for height of ball
+            if (_ballPosition.Y < GraphicsDevice.Viewport.Y ||
+                _ballPosition.Y > GraphicsDevice.Viewport.Height - 64)
+            {
+                _ballVelocity.Y *= -1;  //will turn ball around!
+            }
 
             base.Update(gameTime);      //base refers back to this Game class
         }
