@@ -9,6 +9,10 @@ namespace HelloGame
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
+
+        /// <summary>
+        /// Construction of the game
+        /// </summary>
         public HelloGame()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -16,6 +20,9 @@ namespace HelloGame
             IsMouseVisible = true;
         }
 
+        /// <summary>
+        /// Initalization of the game
+        /// </summary>
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
@@ -23,6 +30,9 @@ namespace HelloGame
             base.Initialize();
         }
 
+        /// <summary>
+        /// Loading the content of the game
+        /// </summary>
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
@@ -30,6 +40,10 @@ namespace HelloGame
             // TODO: use this.Content to load your game content here
         }
 
+        /// <summary>
+        /// Game loop portion responsible for updating the game
+        /// </summary>
+        /// <param name="gameTime"></param>
         protected override void Update(GameTime gameTime)
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
@@ -40,6 +54,10 @@ namespace HelloGame
             base.Update(gameTime);
         }
 
+        /// <summary>
+        /// Game loop portion responsible for drawing the game
+        /// </summary>
+        /// <param name="gameTime"></param>
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
