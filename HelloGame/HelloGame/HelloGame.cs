@@ -9,9 +9,9 @@ namespace HelloGame
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
-        private Vector2 butterballPosition;
-        private Vector2 butterballVelocity;
-        private Texture2D butterballTexture;
+        private Vector2 _butterballPosition;
+        private Vector2 _butterballVelocity;
+        private Texture2D _butterballTexture;
 
         /// <summary>
         /// Construction of the game
@@ -30,13 +30,13 @@ namespace HelloGame
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-            butterballPosition = new Vector2(
+            _butterballPosition = new Vector2(
                 GraphicsDevice.Viewport.Width/2,
                 GraphicsDevice.Viewport.Height/2
                 );
 
             System.Random randomChaos = new System.Random();
-            butterballVelocity = new Vector2(
+            _butterballVelocity = new Vector2(
                 (float)randomChaos.NextDouble(),
                 (float)randomChaos.NextDouble()
                 );
