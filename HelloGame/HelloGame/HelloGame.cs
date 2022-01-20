@@ -9,6 +9,9 @@ namespace HelloGame
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
+        private Vector2 butterballPosition;
+        private Vector2 butterballVelocity;
+        private Texture2D butterballTexture;
 
         /// <summary>
         /// Construction of the game
@@ -18,6 +21,7 @@ namespace HelloGame
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
+            Window.Title = "Hello Game";
         }
 
         /// <summary>
@@ -26,8 +30,19 @@ namespace HelloGame
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            butterballPosition = new Vector2(
+                GraphicsDevice.Viewport.Width/2,
+                GraphicsDevice.Viewport.Height/2
+                );
 
-            base.Initialize();
+            System.Random randomChaos = new System.Random();
+            butterballVelocity = new Vector2(
+                (float)randomChaos.NextDouble(),
+                (float)randomChaos.NextDouble()
+                );
+
+
+            base.Initialize();      //base refers back to this Game class
         }
 
         /// <summary>
@@ -51,7 +66,7 @@ namespace HelloGame
 
             // TODO: Add your update logic here
 
-            base.Update(gameTime);
+            base.Update(gameTime);      //base refers back to this Game class
         }
 
         /// <summary>
@@ -64,7 +79,7 @@ namespace HelloGame
 
             // TODO: Add your drawing code here
 
-            base.Draw(gameTime);
+            base.Draw(gameTime);        //base refers back to this Game class
         }
     }
 }
