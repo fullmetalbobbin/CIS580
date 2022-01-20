@@ -40,6 +40,9 @@ namespace HelloGame
                 (float)randomChaos.NextDouble(),
                 (float)randomChaos.NextDouble()
                 );
+            _ballVelocity.Normalize();  //scales the vector so it is of length one
+            _ballVelocity *= 100;       //100 pixals per second
+
 
             base.Initialize();      //base refers back to this Game class
         }
