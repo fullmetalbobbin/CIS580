@@ -44,28 +44,28 @@ namespace FinickyFeline
             currentKeyboardState = Keyboard.GetState();
 
             // Directional input from gamepad
-            ThisIsTheWay = 200 * currentGamePadState.ThumbSticks.Left * (float)gameTime.ElapsedGameTime.TotalSeconds;
+            ThisIsTheWay = 300 * currentGamePadState.ThumbSticks.Left * (float)gameTime.ElapsedGameTime.TotalSeconds;
 
             // Directional input from keyboard
             if (currentKeyboardState.IsKeyDown(Keys.Left) ||
                 currentKeyboardState.IsKeyDown(Keys.A))
             {
-                ThisIsTheWay += new Vector2(-200 * (float)gameTime.ElapsedGameTime.TotalSeconds, 0);
+                ThisIsTheWay += new Vector2(-300 * (float)gameTime.ElapsedGameTime.TotalSeconds, 0);
             }
             if (currentKeyboardState.IsKeyDown(Keys.Right) ||
                 currentKeyboardState.IsKeyDown(Keys.D))
             {
-                ThisIsTheWay += new Vector2(200 * (float)gameTime.ElapsedGameTime.TotalSeconds, 0);
+                ThisIsTheWay += new Vector2(300 * (float)gameTime.ElapsedGameTime.TotalSeconds, 0);
             }
             if (currentKeyboardState.IsKeyDown(Keys.Up) ||
                 currentKeyboardState.IsKeyDown(Keys.W))
             {
-                ThisIsTheWay += new Vector2(0, -200 * (float)gameTime.ElapsedGameTime.TotalSeconds);
+                ThisIsTheWay += new Vector2(0, -300 * (float)gameTime.ElapsedGameTime.TotalSeconds);
             }
             if (currentKeyboardState.IsKeyDown(Keys.Down) ||
                 currentKeyboardState.IsKeyDown(Keys.S))
             {
-                ThisIsTheWay += new Vector2(0, 200 * (float)gameTime.ElapsedGameTime.TotalSeconds);
+                ThisIsTheWay += new Vector2(0, 300 * (float)gameTime.ElapsedGameTime.TotalSeconds);
             }
 
 

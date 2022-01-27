@@ -72,7 +72,7 @@ namespace FinickyFeline
 
             // TODO: Add your drawing code here
             spriteBatch.Begin();
-            cloveSprite.Draw(gameTime, spriteBatch);
+            //cloveSprite.Draw(gameTime, spriteBatch);
             voomSprite.Draw(gameTime, spriteBatch);
             //spriteBatch.Draw(kibbles, new Vector2(10, 10), new Rectangle(0, 0, 64, 64), Color.White);
             //spriteBatch.Draw(shrimp, new Vector2(40,40), new Rectangle(64, 64, 64, 64), Color.White);
