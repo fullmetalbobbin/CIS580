@@ -79,7 +79,8 @@ namespace FinickyFeline
             //spriteBatch.Draw(beef, new Vector2(70,70), new Rectangle(128, 64, 64, 64), Color.White);
             //spriteBatch.Draw(salmon, new Vector2(100, 100), new Rectangle(128, 0, 64, 64), Color.White);
            // spriteBatch.Draw(tuna, new Vector2(130, 130), new Rectangle(0, 64, 64, 64), Color.White);
-           // spriteBatch.Draw(chicken, new Vector2(160, 160), new Rectangle(64, 0, 64, 64), Color.White);
+            spriteBatch.Draw(chicken, new Vector2(160, 160), new Rectangle(64, 0, 64, 64), Color.White);
+            cloveSprite.Draw(gameTime, spriteBatch);
             spriteBatch.End();
 
 

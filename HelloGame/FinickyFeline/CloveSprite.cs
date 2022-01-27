@@ -21,6 +21,10 @@ namespace FinickyFeline
 
         private bool turned = false;
 
+        private BoundingRectangle bounds = new BoundingRectangle(new Vector2(200 - 64, 200 - 32), 128, 64);
+
+        public BoundingRectangle Bounds => bounds;
+
 
         public void LoadContent(ContentManager content)
         {
@@ -49,6 +53,8 @@ namespace FinickyFeline
                 turned = false;
             }
 
+            bounds.X = clovePosition.X - 64;
+            bounds.Y = clovePosition.Y - 32;
         }
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
