@@ -2764,6 +2764,7 @@
       "path": "netstandard.library/1.6.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "netstandard.library.1.6.0.nupkg.sha512",
@@ -2776,6 +2777,7 @@
       "path": "runtime.native.system/4.0.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -2803,6 +2805,7 @@
       "path": "runtime.native.system.net.http/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -3400,6 +3403,7 @@
       "path": "system.console/4.0.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6202,6 +6206,7 @@
       "path": "system.security.cryptography.csp/4.0.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6274,6 +6279,7 @@
       "path": "system.security.cryptography.openssl/4.0.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.6/System.Security.Cryptography.OpenSsl.dll",
@@ -7381,11 +7387,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\akdreesen\\Source\\Repos\\CIS580\\HelloGame\\HelloGame\\HelloGame.csproj",
-      "projectName": "HelloGame",
-      "projectPath": "C:\\Users\\akdreesen\\Source\\Repos\\CIS580\\HelloGame\\HelloGame\\HelloGame.csproj",
+      "projectUniqueName": "C:\\Users\\akdreesen\\source\\repos\\CIS580\\HelloGame\\FinickyFeline\\FinickyFeline.csproj",
+      "projectName": "FinickyFeline",
+      "projectPath": "C:\\Users\\akdreesen\\source\\repos\\CIS580\\HelloGame\\FinickyFeline\\FinickyFeline.csproj",
       "packagesPath": "C:\\Users\\akdreesen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\akdreesen\\Source\\Repos\\CIS580\\HelloGame\\HelloGame\\obj\\",
+      "outputPath": "C:\\Users\\akdreesen\\source\\repos\\CIS580\\HelloGame\\FinickyFeline\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

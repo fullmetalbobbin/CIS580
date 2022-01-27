@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\akdreesen\\source\\repos\\CIS580\\HelloGame\\HelloGame\\HelloGame.csproj": {}
+    "C:\\Users\\akdreesen\\source\\repos\\CIS580\\HelloGame\\FinickyFeline\\FinickyFeline.csproj": {}
   },
   "projects": {
-    "C:\\Users\\akdreesen\\source\\repos\\CIS580\\HelloGame\\HelloGame\\HelloGame.csproj": {
+    "C:\\Users\\akdreesen\\source\\repos\\CIS580\\HelloGame\\FinickyFeline\\FinickyFeline.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\akdreesen\\source\\repos\\CIS580\\HelloGame\\HelloGame\\HelloGame.csproj",
-        "projectName": "HelloGame",
-        "projectPath": "C:\\Users\\akdreesen\\source\\repos\\CIS580\\HelloGame\\HelloGame\\HelloGame.csproj",
+        "projectUniqueName": "C:\\Users\\akdreesen\\source\\repos\\CIS580\\HelloGame\\FinickyFeline\\FinickyFeline.csproj",
+        "projectName": "FinickyFeline",
+        "projectPath": "C:\\Users\\akdreesen\\source\\repos\\CIS580\\HelloGame\\FinickyFeline\\FinickyFeline.csproj",
         "packagesPath": "C:\\Users\\akdreesen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\akdreesen\\source\\repos\\CIS580\\HelloGame\\HelloGame\\obj\\",
+        "outputPath": "C:\\Users\\akdreesen\\source\\repos\\CIS580\\HelloGame\\FinickyFeline\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

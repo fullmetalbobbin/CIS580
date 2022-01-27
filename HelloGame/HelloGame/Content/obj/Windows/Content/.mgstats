@@ -1,2 +1,2 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/HelloGame/Content/ball.png","C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/HelloGame/Content/bin/Windows/Content/ball.xnb","TextureProcessor","Texture2DContent",8368,16469,0.1102859
+"C:/Users/akdreesen/source/repos/CIS580/HelloGame/HelloGame/Content/ball.png","C:/Users/akdreesen/source/repos/CIS580/HelloGame/HelloGame/Content/bin/Windows/Content/ball.xnb","TextureProcessor","Texture2DContent",8368,16469,0.1245496

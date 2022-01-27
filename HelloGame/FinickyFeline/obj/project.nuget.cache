@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pOSYbJEVKVIrS0nPXstd5cTZOkPKfgsnd/ene/TRKiDA3wq5wUN/PE7uUioF8mgyLIYlqZGN77r4lh0jd9ti/w==",
+  "dgSpecHash": "He5xBvdof44w7OcLVIcZ6T8aunrc6e1RG9a+DkftKpBoJ+9QnLv07WQ55+bD6NEGMeG2PAN1/4b8w5KiMqXzkg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\akdreesen\\source\\repos\\CIS580\\HelloGame\\HelloGame\\HelloGame.csproj",
+  "projectFilePath": "C:\\Users\\akdreesen\\source\\repos\\CIS580\\HelloGame\\FinickyFeline\\FinickyFeline.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\akdreesen\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",
     "C:\\Users\\akdreesen\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\1.1.0\\microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",
