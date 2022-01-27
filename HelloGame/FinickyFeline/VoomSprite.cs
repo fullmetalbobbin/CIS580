@@ -7,13 +7,6 @@ using Microsoft.Xna.Framework.Content;
 
 namespace FinickyFeline
 {
-    public enum Spread
-    { 
-        Small = 0,
-        Medium = 1,
-        Large = 2,
-        Dried = 3
-    }
 
     class VoomSprite
     {
@@ -25,21 +18,41 @@ namespace FinickyFeline
 
         public Vector2 VoomPosition;
 
-        
+      
 
         public void LoadContent(ContentManager content)
         {
-            //voomTexture = content.Load<Texture2D>();
+            voomTexture = content.Load<Texture2D>("voomspritesheet");
         }
 
         public void Update(GameTime gameTime)
-        { 
-
+        {
+            /*
+            voomAnimationTimer += gameTime.ElapsedGameTime.TotalSeconds;
+            if(voomAnimationTimer > 2.0 && voomAnimationFrame < 4)
+            {
+                voomAnimationFrame++;
+                VoomSpread++;
+                voomAnimationTimer -= 2.0;
+            }
+            */
         }
 
-        public void Draw(GameTime gameTime, SpriteBatch sprite)
+        public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             
+            
+            voomAnimationTimer += gameTime.ElapsedGameTime.TotalSeconds;
+
+            if (voomAnimationTimer > 2.0 && voomAnimationFrame < 4)
+            {
+                voomAnimationFrame++;
+                voomAnimationTimer -= 2.0;
+            }
+            
+
+            var source = new Rectangle(voomAnimationFrame * 64, 0, 64, 64);  //Write over with position of undesired food
+            spriteBatch.Draw(voomTexture, VoomPosition, source, Color.White);
         }
 
     }
