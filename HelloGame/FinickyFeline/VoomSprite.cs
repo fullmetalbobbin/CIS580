@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework.Content;
 namespace FinickyFeline
 {
 
-    class VoomSprite
+    public class VoomSprite
     {
         private Texture2D voomTexture;
 

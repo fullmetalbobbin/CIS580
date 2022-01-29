@@ -11,7 +11,7 @@ namespace FinickyFeline
     /// <summary>
     /// Manages the input for the game from both gamepad and keyboard
     /// </summary>
-    class InputManager
+    public class InputManager
     {
         // Initalizing for gamepad input
         GamePadState currentGamePadState;

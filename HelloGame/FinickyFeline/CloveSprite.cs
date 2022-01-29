@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Content;
 
 namespace FinickyFeline
 {
-    class CloveSprite
+    public class CloveSprite
     {
         private GamePadState gamePadState;
 

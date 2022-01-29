@@ -13,6 +13,7 @@ namespace FinickyFeline
 
         private CloveSprite cloveSprite;
         private VoomSprite voomSprite;
+        private MouseSprite mouseSprite;
         private Texture2D kibbles;
         private Texture2D shrimp;
         private Texture2D beef;
@@ -36,7 +37,7 @@ namespace FinickyFeline
             inputManager = new InputManager();
             cloveSprite = new CloveSprite();
             voomSprite = new VoomSprite();
-
+            mouseSprite = new MouseSprite();
 
             base.Initialize();
         }
@@ -48,6 +49,7 @@ namespace FinickyFeline
             // TODO: use this.Content to load your game content here
             cloveSprite.LoadContent(Content);
             voomSprite.LoadContent(Content);
+            mouseSprite.LoadContent(Content);
             kibbles = Content.Load<Texture2D>("foodspritesheet");
             shrimp = Content.Load<Texture2D>("foodspritesheet");
             beef = Content.Load<Texture2D>("foodspritesheet");
@@ -65,6 +67,8 @@ namespace FinickyFeline
 
             // TODO: Add your update logic here
             cloveSprite.Update(gameTime);
+            voomSprite.Update(gameTime);
+            mouseSprite.Update(gameTime);
 
             base.Update(gameTime);
         }
@@ -86,6 +90,7 @@ namespace FinickyFeline
             spriteBatch.DrawString(dosis, "The Finicky Feline", new Vector2(340, 0), Color.Black);
             spriteBatch.DrawString(dosis, "Exit game - Press Back or ESC", new Vector2(GraphicsDevice.Viewport.Width/3  + 20,GraphicsDevice.Viewport.Height - 40), Color.Black );
             cloveSprite.Draw(gameTime, spriteBatch);
+            mouseSprite.Draw(gameTime, spriteBatch);
 
             spriteBatch.End();
 
