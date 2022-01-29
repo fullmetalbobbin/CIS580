@@ -1,0 +1,7 @@
+﻿Content/Dosis/Dosis.ttf - Dosis font designed by Impallari Type, released on Google Fonts (https://fonts.google.com/specimen/Dosis#standard-styles)
+
+Content/clovespritesheet.png - created by Amanda Dreesen using PROCREATE
+
+Content/foodspritesheet.png - created by Amanda Dreesen using PROCREATE
+
+Content/voomspritesheet.png - created by Amanda Dreesen using PROCREATE
