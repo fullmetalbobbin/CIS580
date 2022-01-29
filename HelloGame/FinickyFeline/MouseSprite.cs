@@ -26,9 +26,9 @@ namespace FinickyFeline
 
         private double mouseDirectionTimer;
 
-        private bool mouseTurned = false;
+        //private bool mouseTurned = false;
 
-        public Vector2 MousePosition = new Vector2(700,300);
+        public Vector2 MousePosition = new Vector2(500,70);
 
         public MouseDirection MouseDirection;
 
@@ -43,6 +43,24 @@ namespace FinickyFeline
 
             if (mouseDirectionTimer > 1.0)
             {
+                if (mouseAnimationFrame > 4)
+                {
+                    MouseDirection = MouseDirection.Left;
+                }
+                else if (mouseAnimationFrame == 4)
+                {
+                    MouseDirection = MouseDirection.PivotFromLeftToRight;
+                }
+                else if (mouseAnimationFrame == 9)
+                {
+                    MouseDirection = MouseDirection.PivotFromRightToLeft;
+                }
+                else
+                {
+                    MouseDirection = MouseDirection.Right;
+                }
+
+                /*
                 switch (MouseDirection)
                 {
                     case MouseDirection.Left:
@@ -60,6 +78,7 @@ namespace FinickyFeline
                         mouseAnimationFrame = 9;
                         break;               
                 }
+                */
                 mouseDirectionTimer -= 1.0;
             }
 
@@ -69,15 +88,17 @@ namespace FinickyFeline
                     MousePosition += new Vector2(-1, 0) * 100 * (float)gameTime.ElapsedGameTime.TotalSeconds;
                     break;
                 case MouseDirection.PivotFromLeftToRight:
-                    MousePosition += new Vector2(1, 0) * 100 * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                    //MousePosition += new Vector2(-1, 0) * 100 * (float)gameTime.ElapsedGameTime.TotalSeconds;
                     break;
                 case MouseDirection.Right:
                     MousePosition += new Vector2(1, 0) * 100 * (float)gameTime.ElapsedGameTime.TotalSeconds;
                     break;
                 case MouseDirection.PivotFromRightToLeft:
-                    MousePosition += new Vector2(-1, 0) * 100 * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                    //MousePosition += new Vector2(1, 0) * 100 * (float)gameTime.ElapsedGameTime.TotalSeconds;
                     break;
             }
+
+
         }
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
