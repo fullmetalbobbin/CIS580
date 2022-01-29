@@ -27,6 +27,7 @@ namespace FinickyFeline
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = false;
+            Window.Title = "The Finicky Feline";
         }
 
         protected override void Initialize()
@@ -82,7 +83,8 @@ namespace FinickyFeline
             spriteBatch.Draw(salmon, new Vector2(100, 100), new Rectangle(128, 0, 64, 64), Color.White);
             spriteBatch.Draw(tuna, new Vector2(130, 130), new Rectangle(0, 64, 64, 64), Color.White);
             spriteBatch.Draw(chicken, new Vector2(160, 160), new Rectangle(64, 0, 64, 64), Color.White);
-            spriteBatch.DrawString(dosis, "Exit game - Press Back or ESC", new Vector2(280,0), Color.Black );
+            spriteBatch.DrawString(dosis, "The Finicky Feline", new Vector2(340, 0), Color.Black);
+            spriteBatch.DrawString(dosis, "Exit game - Press Back or ESC", new Vector2(GraphicsDevice.Viewport.Width/3  + 20,GraphicsDevice.Viewport.Height - 40), Color.Black );
             cloveSprite.Draw(gameTime, spriteBatch);
 
             spriteBatch.End();
