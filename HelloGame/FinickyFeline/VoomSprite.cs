@@ -12,11 +12,13 @@ namespace FinickyFeline
     {
         private Texture2D voomTexture;
 
+        //private Vector2 testVoom = new Vector2(200, 50);
+
         private short voomAnimationFrame = 0;
 
         private double voomAnimationTimer;
 
-        public Vector2 VoomPosition;
+        public Vector2 VoomPosition = new Vector2(350, 50);
 
       
 
