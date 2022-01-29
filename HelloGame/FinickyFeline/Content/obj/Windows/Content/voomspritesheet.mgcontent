@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/voomspritesheet.png</SourceFile>
-  <SourceTime>2022-01-28T18:33:50.1400938-06:00</SourceTime>
-  <DestFile>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/voomspritesheet.xnb</DestFile>
-  <DestTime>2022-01-28T18:34:03.982044-06:00</DestTime>
+  <SourceFile>C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/voomspritesheet.png</SourceFile>
+  <SourceTime>2022-01-28T22:05:14.3000846-06:00</SourceTime>
+  <DestFile>C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/voomspritesheet.xnb</DestFile>
+  <DestTime>2022-01-28T22:08:43.7190486-06:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T11:17:54-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -11,11 +11,9 @@ namespace FinickyFeline
     public enum MouseDirection
     { 
         Left,
-        PivotFromLeftToRight,
-        Right,
-        PivotFromRightToLeft
-        
+        Right       
     }
+
     public class MouseSprite
     {
         private Texture2D mouseTexture;
@@ -24,13 +22,13 @@ namespace FinickyFeline
 
         private double mouseAnimationTimer;
 
-        private double mouseDirectionTimer;
+        //private double mouseDirectionTimer;
 
         //private bool mouseTurned = false;
 
-        public Vector2 MousePosition;
+        public Vector2 MousePosition = new Vector2(500,380);
 
-        public MouseDirection MouseDirection;
+        public MouseDirection MouseDirection = MouseDirection.Left;
 
         public void LoadContent(ContentManager content)
         {
@@ -39,76 +37,37 @@ namespace FinickyFeline
 
         public void Update(GameTime gameTime)
         { 
-            mouseDirectionTimer = gameTime.ElapsedGameTime.TotalSeconds;
-
-            if (mouseDirectionTimer > 1.0)
+            if (mouseAnimationFrame < 5)
             {
-                if (mouseAnimationFrame > 4)
-                {
-                    MouseDirection = MouseDirection.Left;
-                }
-                else if (mouseAnimationFrame == 4)
-                {
-                    MouseDirection = MouseDirection.PivotFromLeftToRight;
-                }
-                else if (mouseAnimationFrame == 9)
-                {
-                    MouseDirection = MouseDirection.PivotFromRightToLeft;
-                }
-                else
-                {
-                    MouseDirection = MouseDirection.Right;
-                }
-
-                /*
-                switch (MouseDirection)
-                {
-                    case MouseDirection.Left:
-                        MouseDirection = MouseDirection.PivotFromLeftToRight;
-                        break;
-                    case MouseDirection.PivotFromLeftToRight:
-                        MouseDirection = MouseDirection.Right;
-                        mouseAnimationFrame = 4;
-                        break;
-                    case MouseDirection.Right:
-                        MouseDirection = MouseDirection.PivotFromRightToLeft;
-                        break;
-                    case MouseDirection.PivotFromRightToLeft:
-                        MouseDirection = MouseDirection.Left;
-                        mouseAnimationFrame = 9;
-                        break;               
-                }
-                */
-                mouseDirectionTimer -= 1.0;
+                 MouseDirection = MouseDirection.Left;
+            }
+            else
+            {
+                MouseDirection = MouseDirection.Right;
             }
 
+            
             switch (MouseDirection)
             {
                 case MouseDirection.Left:
                     MousePosition += new Vector2(-1, 0) * 100 * (float)gameTime.ElapsedGameTime.TotalSeconds;
                     break;
-                case MouseDirection.PivotFromLeftToRight:
-                    //MousePosition += new Vector2(-1, 0) * 100 * (float)gameTime.ElapsedGameTime.TotalSeconds;
-                    break;
                 case MouseDirection.Right:
                     MousePosition += new Vector2(1, 0) * 100 * (float)gameTime.ElapsedGameTime.TotalSeconds;
                     break;
-                case MouseDirection.PivotFromRightToLeft:
-                    //MousePosition += new Vector2(1, 0) * 100 * (float)gameTime.ElapsedGameTime.TotalSeconds;
-                    break;
             }
-
+            
 
         }
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             mouseAnimationTimer += gameTime.ElapsedGameTime.TotalSeconds;
-            if (mouseAnimationTimer > 1.0)
+            if (mouseAnimationTimer > 0.5)
             {
                 mouseAnimationFrame++;
                 if (mouseAnimationFrame > 9) mouseAnimationFrame = 0;
-                mouseAnimationTimer -= 1.0;
+                mouseAnimationTimer -= 0.5;
             }
             var source = new Rectangle(mouseAnimationFrame * 64, 0, 64, 64);  //Write over with position of undesired food
             //SpriteEffects spriteEffects = (mouseTurned) ? SpriteEffects.FlipHorizontally : SpriteEffects.None;

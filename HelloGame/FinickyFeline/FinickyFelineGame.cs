@@ -37,7 +37,7 @@ namespace FinickyFeline
             inputManager = new InputManager();
             cloveSprite = new CloveSprite();
             voomSprite = new VoomSprite();
-            mouseSprite = new MouseSprite() { MousePosition = new Vector2(500,30), MouseDirection = MouseDirection.Left};
+            mouseSprite = new MouseSprite();
 
             base.Initialize();
         }

@@ -1,10 +1,12 @@
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\Content\clovespritesheet.xnb
+C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\Content\dosis.xnb
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\Content\foodspritesheet.xnb
+C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\Content\mousespritesheet.xnb
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\Content\voomspritesheet.xnb
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\FinickyFeline.exe
-C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\FinickyFeline.deps.json
-C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\FinickyFeline.runtimeconfig.json
-C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\FinickyFeline.runtimeconfig.dev.json
+C:\Users\akdreesen\source\repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\FinickyFeline.deps.json
+C:\Users\akdreesen\source\repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\FinickyFeline.runtimeconfig.json
+C:\Users\akdreesen\source\repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\FinickyFeline.runtimeconfig.dev.json
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\FinickyFeline.dll
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\FinickyFeline.pdb
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
@@ -33,9 +35,7 @@ C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcore
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.AssemblyInfoInputs.cache
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.AssemblyInfo.cs
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.csproj.CoreCompileInputs.cache
-C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.csproj.CopyComplete
+C:\Users\akdreesen\source\repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.csproj.CopyComplete
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.dll
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.pdb
-C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.genruntimeconfig.cache
-C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\Content\dosis.xnb
-C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.csproj.AssemblyReference.cache
+C:\Users\akdreesen\source\repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.genruntimeconfig.cache
