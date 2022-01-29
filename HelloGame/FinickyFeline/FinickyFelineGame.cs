@@ -19,7 +19,7 @@ namespace FinickyFeline
         private Texture2D salmon;
         private Texture2D tuna;
         private Texture2D chicken;
-        
+        private SpriteFont dosis;
 
 
         public FinickyFelineGame()
@@ -35,6 +35,7 @@ namespace FinickyFeline
             inputManager = new InputManager();
             cloveSprite = new CloveSprite();
             voomSprite = new VoomSprite();
+
 
             base.Initialize();
         }
@@ -52,6 +53,7 @@ namespace FinickyFeline
             salmon = Content.Load<Texture2D>("foodspritesheet");
             tuna = Content.Load<Texture2D>("foodspritesheet");
             chicken = Content.Load<Texture2D>("foodspritesheet");
+            dosis = Content.Load<SpriteFont>("dosis");
         }
 
         protected override void Update(GameTime gameTime)
@@ -74,13 +76,15 @@ namespace FinickyFeline
             spriteBatch.Begin();
             //cloveSprite.Draw(gameTime, spriteBatch);
             voomSprite.Draw(gameTime, spriteBatch);
-            //spriteBatch.Draw(kibbles, new Vector2(10, 10), new Rectangle(0, 0, 64, 64), Color.White);
-            //spriteBatch.Draw(shrimp, new Vector2(40,40), new Rectangle(64, 64, 64, 64), Color.White);
-            //spriteBatch.Draw(beef, new Vector2(70,70), new Rectangle(128, 64, 64, 64), Color.White);
-            //spriteBatch.Draw(salmon, new Vector2(100, 100), new Rectangle(128, 0, 64, 64), Color.White);
-           // spriteBatch.Draw(tuna, new Vector2(130, 130), new Rectangle(0, 64, 64, 64), Color.White);
+            spriteBatch.Draw(kibbles, new Vector2(10, 10), new Rectangle(0, 0, 64, 64), Color.White);
+            spriteBatch.Draw(shrimp, new Vector2(40,40), new Rectangle(64, 64, 64, 64), Color.White);
+            spriteBatch.Draw(beef, new Vector2(70,70), new Rectangle(128, 64, 64, 64), Color.White);
+            spriteBatch.Draw(salmon, new Vector2(100, 100), new Rectangle(128, 0, 64, 64), Color.White);
+            spriteBatch.Draw(tuna, new Vector2(130, 130), new Rectangle(0, 64, 64, 64), Color.White);
             spriteBatch.Draw(chicken, new Vector2(160, 160), new Rectangle(64, 0, 64, 64), Color.White);
+            spriteBatch.DrawString(dosis, "Exit game - Press Back or ESC", new Vector2(150,0), Color.Black );
             cloveSprite.Draw(gameTime, spriteBatch);
+
             spriteBatch.End();
 
 
