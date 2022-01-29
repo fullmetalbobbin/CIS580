@@ -28,7 +28,7 @@ namespace FinickyFeline
 
         //private bool mouseTurned = false;
 
-        public Vector2 MousePosition = new Vector2(500,70);
+        public Vector2 MousePosition;
 
         public MouseDirection MouseDirection;
 
