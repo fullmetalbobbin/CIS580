@@ -21,7 +21,6 @@ namespace FinickyFeline
         KeyboardState currentKeyboardState;
         KeyboardState previousKeyboardState;
 
-
       
         /// <summary>
         /// The current direction
