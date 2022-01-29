@@ -9,6 +9,10 @@ using Microsoft.Xna.Framework.Content;
 
 namespace FinickyFeline
 {
+    /// <summary>
+    /// A class representing Clove
+    /// THE HEROIC (yet dainty) AND FLUFFY PROTAGONIST
+    /// </summary>
     public class CloveSprite
     {
         private GamePadState gamePadState;
@@ -24,7 +28,6 @@ namespace FinickyFeline
         private BoundingRectangle bounds = new BoundingRectangle(new Vector2(200 - 64, 200 - 32), 128, 64);
 
         public BoundingRectangle Bounds => bounds;
-
 
         public void LoadContent(ContentManager content)
         {

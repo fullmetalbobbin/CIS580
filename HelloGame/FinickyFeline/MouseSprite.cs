@@ -14,6 +14,10 @@ namespace FinickyFeline
         Right       
     }
 
+    /// <summary>
+    /// A class representing a tiny Jerry, doin' laps by the exit.
+    /// I mean mouse.
+    /// </summary>
     public class MouseSprite
     {
         private Texture2D mouseTexture;
@@ -21,10 +25,6 @@ namespace FinickyFeline
         private short mouseAnimationFrame = 0;
 
         private double mouseAnimationTimer;
-
-        //private double mouseDirectionTimer;
-
-        //private bool mouseTurned = false;
 
         public Vector2 MousePosition = new Vector2(500,380);
 
@@ -56,8 +56,6 @@ namespace FinickyFeline
                     MousePosition += new Vector2(1, 0) * 100 * (float)gameTime.ElapsedGameTime.TotalSeconds;
                     break;
             }
-            
-
         }
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
@@ -70,8 +68,6 @@ namespace FinickyFeline
                 mouseAnimationTimer -= 0.5;
             }
             var source = new Rectangle(mouseAnimationFrame * 64, 0, 64, 64);  //Write over with position of undesired food
-            //SpriteEffects spriteEffects = (mouseTurned) ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
-            //spriteBatch.Draw(mouseTexture, MousePosition, source, Color.White, 0, new Vector2(64, 64), 1.0f, spriteEffects, 0);
             spriteBatch.Draw(mouseTexture, MousePosition, source, Color.White);
         }
 

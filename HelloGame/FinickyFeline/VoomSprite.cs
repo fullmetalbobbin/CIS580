@@ -7,12 +7,12 @@ using Microsoft.Xna.Framework.Content;
 
 namespace FinickyFeline
 {
-
+    /// <summary>
+    /// A class to represent an unfortunate upward-occuring digestional incident (delicately phrased but explicitly drawn) - "voom"
+    /// </summary>
     public class VoomSprite
     {
         private Texture2D voomTexture;
-
-        //private Vector2 testVoom = new Vector2(200, 50);
 
         private short voomAnimationFrame = 0;
 
@@ -29,21 +29,11 @@ namespace FinickyFeline
 
         public void Update(GameTime gameTime)
         {
-            /*
-            voomAnimationTimer += gameTime.ElapsedGameTime.TotalSeconds;
-            if(voomAnimationTimer > 2.0 && voomAnimationFrame < 4)
-            {
-                voomAnimationFrame++;
-                VoomSpread++;
-                voomAnimationTimer -= 2.0;
-            }
-            */
+
         }
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
-        {
-            
-            
+        {           
             voomAnimationTimer += gameTime.ElapsedGameTime.TotalSeconds;
 
             if (voomAnimationTimer > 2.0 && voomAnimationFrame < 4)
@@ -51,8 +41,6 @@ namespace FinickyFeline
                 voomAnimationFrame++;
                 voomAnimationTimer -= 2.0;
             }
-            
-
             var source = new Rectangle(voomAnimationFrame * 64, 0, 64, 64);  //Write over with position of undesired food
             spriteBatch.Draw(voomTexture, VoomPosition, source, Color.White);
         }

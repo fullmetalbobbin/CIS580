@@ -7,11 +7,22 @@ using Microsoft.Xna.Framework.Input;
 
 namespace FinickyFeline
 {
-    class CatoSprite
+    public class CatoSprite
     {
-
+        /// <summary>
+        /// COMING SOON - THE CHONKY ANTAGONIST
+        /// </summary>
         public void LoadContent()
         {
         }
+
+        public void Update()
+        { 
+        }
+
+        public void Draw()
+        { 
+        }
+
     }
 }
