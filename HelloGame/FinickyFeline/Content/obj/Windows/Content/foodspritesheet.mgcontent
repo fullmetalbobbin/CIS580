@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/foodspritesheet.png</SourceFile>
-  <SourceTime>2022-01-26T22:48:38.6631557-06:00</SourceTime>
+  <SourceTime>2022-01-28T18:33:50.1361045-06:00</SourceTime>
   <DestFile>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/foodspritesheet.xnb</DestFile>
-  <DestTime>2022-01-27T00:46:16.8249669-06:00</DestTime>
+  <DestTime>2022-01-28T18:34:03.9780553-06:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T11:17:54-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
