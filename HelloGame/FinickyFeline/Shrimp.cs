@@ -33,6 +33,7 @@ namespace FinickyFeline
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
+            if (Consumed) return;
             spriteBatch.Draw(shrimpTexture, shrimpPosition, new Rectangle(64, 64, 64, 64), Color.White);
         }
 

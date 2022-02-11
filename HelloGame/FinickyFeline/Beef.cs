@@ -33,6 +33,7 @@ namespace FinickyFeline
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
+            if (Consumed) return;
             spriteBatch.Draw(beefTexture, beefPosition, new Rectangle(128, 64, 64, 64), Color.White);
         }
 

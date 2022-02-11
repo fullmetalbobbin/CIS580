@@ -104,6 +104,7 @@ namespace FinickyFeline
 
             // TODO: Add your update logic here
             cloveSprite.Update(gameTime);
+            //cloveSprite.CloveColor = Color.White;
             voomSprite.Update(gameTime);
             mouseSprite.Update(gameTime);
 
@@ -140,7 +141,7 @@ namespace FinickyFeline
                 {
                     salmon.Consumed = true;
                     //PLAY PURR AUDIO HERE... whenever you make it
-                    cloveSprite.CloveColor = Color.DarkSalmon;
+                    cloveSprite.CloveColor = Color.Yellow;
                 }
             }
             foreach (var tuna in tunas)

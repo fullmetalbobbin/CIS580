@@ -33,6 +33,7 @@ namespace FinickyFeline
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
+            if (Consumed) return;
             spriteBatch.Draw(chickenTexture, chickenPosition, new Rectangle(0, 64, 64, 64), Color.White);
         }
     }

@@ -23,7 +23,7 @@ namespace FinickyFeline
         public Tuna(Vector2 position)
         {
             this.tunaPosition = position;
-            this.tunaBounds = new BoundingRectangle(position + new Vector2(10, 10), 64, 64);
+            this.tunaBounds = new BoundingRectangle(new Vector2(this.tunaPosition.X, this.tunaPosition.Y +16), 64, 32);
         }
 
         public void LoadContent(ContentManager content)
@@ -33,6 +33,7 @@ namespace FinickyFeline
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
+            if (Consumed) return;
             spriteBatch.Draw(tunaTexture, tunaPosition, new Rectangle(64, 0, 64, 64), Color.White);
         }
     }

@@ -35,6 +35,7 @@ namespace FinickyFeline
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
+            if (Consumed) return;
             spriteBatch.Draw(kibbleTexture, kibblePosition, new Rectangle(0, 0, 64, 64), Color.White);
         }
 
