@@ -18,6 +18,8 @@ namespace FinickyFeline
 
         public bool Consumed { get; set; } = false;
 
+        public BoundingRectangle ShrimpBounds => shrimpBounds;
+
         public Shrimp(Vector2 position)
         {
             this.shrimpPosition = position;

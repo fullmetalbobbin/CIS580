@@ -22,6 +22,7 @@ namespace FinickyFeline
         private Salmon[] salmons;
         private Tuna[] tunas;
         private Chicken[] chickens;
+        //private IFood[] foods;
 
 
 
@@ -105,6 +106,61 @@ namespace FinickyFeline
             cloveSprite.Update(gameTime);
             voomSprite.Update(gameTime);
             mouseSprite.Update(gameTime);
+
+            foreach (var kibble in kibbles) 
+            {
+                if (!kibble.Consumed && kibble.KibbleBounds.Consumed(cloveSprite.CloveBounds))
+                {
+                    kibble.Consumed = true;
+                    //PLAY VOOM ANIMATION HERE
+                    cloveSprite.CloveColor = Color.Green;
+                }
+            }
+            foreach (var shrimp in shrimps)
+            {
+                if(!shrimp.Consumed && shrimp.ShrimpBounds.Consumed(cloveSprite.CloveBounds))
+                {
+                    shrimp.Consumed = true;
+                    //PLAY PURR AUDIO HERE... whenever you make it
+                    cloveSprite.CloveColor = Color.LightSalmon;
+                }
+            }
+            foreach (var beef in beefs)
+            {
+                if (!beef.Consumed && beef.BeefBounds.Consumed(cloveSprite.CloveBounds))
+                {
+                    beef.Consumed = true;
+                    //PLAY VOOM ANIMATION HERE
+                    cloveSprite.CloveColor = Color.Green;
+                }
+            }
+            foreach (var salmon in salmons)
+            {
+                if (!salmon.Consumed && salmon.SalmonBounds.Consumed(cloveSprite.CloveBounds))
+                {
+                    salmon.Consumed = true;
+                    //PLAY PURR AUDIO HERE... whenever you make it
+                    cloveSprite.CloveColor = Color.DarkSalmon;
+                }
+            }
+            foreach (var tuna in tunas)
+            {
+                if (!tuna.Consumed && tuna.TunaBounds.Consumed(cloveSprite.CloveBounds))
+                {
+                    tuna.Consumed = true;
+                    //PLAY PURR AUDIO HERE... whenever you make it
+                    cloveSprite.CloveColor = Color.DimGray;
+                }
+            }
+            foreach (var chicken in chickens)
+            {
+                if (!chicken.Consumed && chicken.ChickenBounds.Consumed(cloveSprite.CloveBounds))
+                {
+                    chicken.Consumed = true;
+                    //PLAY VOOM ANIMATION HERE
+                    cloveSprite.CloveColor = Color.GreenYellow;
+                }
+            }
 
             base.Update(gameTime);
         }

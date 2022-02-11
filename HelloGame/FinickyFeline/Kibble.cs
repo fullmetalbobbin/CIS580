@@ -19,6 +19,8 @@ namespace FinickyFeline
 
         public bool Consumed { get; set; } = false;
 
+        public BoundingRectangle KibbleBounds => kibbleBounds;
+
         public Kibble(Vector2 position)
         {
             this.kibblePosition = position;

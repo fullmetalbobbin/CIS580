@@ -18,6 +18,8 @@ namespace FinickyFeline
 
         public bool Consumed { get; set; } = false;
 
+        public BoundingRectangle BeefBounds => beefBounds;
+
         public Beef(Vector2 position)
         {
             this.beefPosition = position;

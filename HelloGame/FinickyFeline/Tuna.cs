@@ -18,6 +18,8 @@ namespace FinickyFeline
 
         public bool Consumed { get; set; } = false;
 
+        public BoundingRectangle TunaBounds => tunaBounds;
+
         public Tuna(Vector2 position)
         {
             this.tunaPosition = position;

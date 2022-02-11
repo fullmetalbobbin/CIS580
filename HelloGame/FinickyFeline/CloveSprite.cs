@@ -25,9 +25,11 @@ namespace FinickyFeline
 
         private bool turned = false;
 
-        private BoundingRectangle bounds = new BoundingRectangle(new Vector2(375 - 64, 300 - 32), 128, 64);
+        private BoundingRectangle cloveBounds = new BoundingRectangle(new Vector2(375 - 64, 300 - 32), 128, 64);
 
-        public BoundingRectangle Bounds => bounds;
+        public BoundingRectangle CloveBounds => cloveBounds;
+
+        public Color CloveColor { get; set; } = Color.White;
 
         public void LoadContent(ContentManager content)
         {
@@ -56,14 +58,14 @@ namespace FinickyFeline
                 turned = false;
             }
 
-            bounds.X = clovePosition.X - 64;
-            bounds.Y = clovePosition.Y - 32;
+            cloveBounds.X = clovePosition.X - 64;
+            cloveBounds.Y = clovePosition.Y - 32;
         }
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             SpriteEffects spriteEffects = (turned) ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
-            spriteBatch.Draw(cloveTexture, clovePosition, null,  Color.White, 0, new Vector2 (64,64), 1.0f, spriteEffects, 0);
+            spriteBatch.Draw(cloveTexture, clovePosition, null,  CloveColor, 0, new Vector2 (64,64), 1.0f, spriteEffects, 0);
         }
 
     }

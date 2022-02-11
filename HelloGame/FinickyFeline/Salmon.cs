@@ -18,6 +18,8 @@ namespace FinickyFeline
 
         public bool Consumed { get; set; } = false;
 
+        public BoundingRectangle SalmonBounds => salmonBounds;
+
         public Salmon(Vector2 position)
         {
             this.salmonPosition = position;
