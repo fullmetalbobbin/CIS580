@@ -29,6 +29,8 @@ namespace FinickyFeline
             Content.RootDirectory = "Content";
             IsMouseVisible = false;
             Window.Title = "The Finicky Feline";
+            graphics.PreferredBackBufferHeight = 500;
+            graphics.PreferredBackBufferWidth = 750;
         }
 
         protected override void Initialize()
@@ -81,14 +83,20 @@ namespace FinickyFeline
             spriteBatch.Begin();
             //cloveSprite.Draw(gameTime, spriteBatch);
             voomSprite.Draw(gameTime, spriteBatch);
-            spriteBatch.Draw(kibbles, new Vector2(10, 10), new Rectangle(0, 0, 64, 64), Color.White);
-            spriteBatch.Draw(shrimp, new Vector2(40,40), new Rectangle(64, 64, 64, 64), Color.White);
-            spriteBatch.Draw(beef, new Vector2(70,70), new Rectangle(128, 64, 64, 64), Color.White);
-            spriteBatch.Draw(salmon, new Vector2(100, 100), new Rectangle(128, 0, 64, 64), Color.White);
-            spriteBatch.Draw(tuna, new Vector2(130, 130), new Rectangle(0, 64, 64, 64), Color.White);
-            spriteBatch.Draw(chicken, new Vector2(160, 160), new Rectangle(64, 0, 64, 64), Color.White);
-            spriteBatch.DrawString(dosis, "The Finicky Feline", new Vector2(340, 0), Color.Black);
-            spriteBatch.DrawString(dosis, "Exit game - Press Back or ESC", new Vector2(GraphicsDevice.Viewport.Width/3  + 20,GraphicsDevice.Viewport.Height - 40), Color.Black );
+            spriteBatch.Draw(kibbles, new Vector2(58, 20), new Rectangle(0, 0, 64, 64), Color.White);
+            spriteBatch.Draw(shrimp, new Vector2(172, 20), new Rectangle(64, 64, 64, 64), Color.White);
+            spriteBatch.Draw(beef, new Vector2(286, 20), new Rectangle(128, 64, 64, 64), Color.White);
+            spriteBatch.Draw(salmon, new Vector2(400, 20), new Rectangle(128, 0, 64, 64), Color.White);
+            spriteBatch.Draw(tuna, new Vector2(514, 20), new Rectangle(64, 0, 64, 64), Color.White);
+            spriteBatch.Draw(chicken, new Vector2(628, 20), new Rectangle(0, 64, 64, 64), Color.White);
+            spriteBatch.Draw(kibbles, new Vector2(58, 310), new Rectangle(0, 0, 64, 64), Color.White);
+            spriteBatch.Draw(shrimp, new Vector2(172, 310), new Rectangle(64, 64, 64, 64), Color.White);
+            spriteBatch.Draw(beef, new Vector2(286, 310), new Rectangle(128, 64, 64, 64), Color.White);
+            spriteBatch.Draw(salmon, new Vector2(400, 310), new Rectangle(128, 0, 64, 64), Color.White);
+            spriteBatch.Draw(tuna, new Vector2(514, 310), new Rectangle(64, 0, 64, 64), Color.White);
+            spriteBatch.Draw(chicken, new Vector2(628, 310), new Rectangle(0, 64, 64, 64), Color.White);
+            spriteBatch.DrawString(dosis, "The Finicky Feline", new Vector2(300, 110), Color.Black);
+            spriteBatch.DrawString(dosis, "Exit game - Press Back or ESC", new Vector2(GraphicsDevice.Viewport.Width/3  + 10,GraphicsDevice.Viewport.Height - 40), Color.Black );
             mouseSprite.Draw(gameTime, spriteBatch);
             cloveSprite.Draw(gameTime, spriteBatch);
             spriteBatch.End();

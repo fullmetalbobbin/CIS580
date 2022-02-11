@@ -35,3 +35,4 @@ C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\HelloGame\obj\Debug\netcoreapp3
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\HelloGame\obj\Debug\netcoreapp3.1\HelloGame.dll
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\HelloGame\obj\Debug\netcoreapp3.1\HelloGame.pdb
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\HelloGame\obj\Debug\netcoreapp3.1\HelloGame.genruntimeconfig.cache
+C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\HelloGame\obj\Debug\netcoreapp3.1\HelloGame.csproj.AssemblyReference.cache

@@ -18,7 +18,7 @@ namespace FinickyFeline
 
         private double voomAnimationTimer;
 
-        public Vector2 VoomPosition = new Vector2(350, 50);
+        public Vector2 VoomPosition = new Vector2(400, 250);
 
       
 
