@@ -25,7 +25,7 @@ namespace FinickyFeline
 
         private bool turned = false;
 
-        private BoundingRectangle bounds = new BoundingRectangle(new Vector2(200 - 64, 200 - 32), 128, 64);
+        private BoundingRectangle bounds = new BoundingRectangle(new Vector2(375 - 64, 300 - 32), 128, 64);
 
         public BoundingRectangle Bounds => bounds;
 
