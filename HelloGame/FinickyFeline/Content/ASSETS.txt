@@ -7,3 +7,5 @@ Content/foodspritesheet.png - created by Amanda Dreesen using PROCREATE
 Content/mousespritesheet.png - created by Amanda Dreesen using PROCREATE
 
 Content/voomspritesheet.png - created by Amanda Dreesen using PROCREATE
+
+Content/finickyfelinetitle.png - created by Amanda Dreesen using PROCREATE

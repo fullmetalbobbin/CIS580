@@ -26,7 +26,7 @@ namespace FinickyFeline
 
         private double mouseAnimationTimer;
 
-        public Vector2 MousePosition = new Vector2(480, 400);
+        public Vector2 MousePosition = new Vector2(480, 415);
 
         public MouseDirection MouseDirection = MouseDirection.Left;
 

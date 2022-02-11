@@ -6,11 +6,13 @@
   <SourceFiles>
     <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/clovespritesheet.png</File>
     <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/dosis.spritefont</File>
+    <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/finickyfelinetitle.png</File>
     <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/foodspritesheet.png</File>
     <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/mousespritesheet.png</File>
     <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/voomspritesheet.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -21,7 +21,7 @@ namespace FinickyFeline
 
         private Texture2D cloveTexture;
 
-        private Vector2 clovePosition = new Vector2(375, 230);
+        private Vector2 clovePosition = new Vector2(375, 300);
 
         private bool turned = false;
 
