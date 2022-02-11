@@ -41,3 +41,4 @@ C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcore
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.pdb
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.genruntimeconfig.cache
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.csproj.AssemblyReference.cache
+C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\Content\32x32.xnb

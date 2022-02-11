@@ -24,6 +24,8 @@ namespace FinickyFeline
         private Chicken[] chickens;
         //private IFood[] foods;
 
+        private Texture2D ref32;
+
 
 
         public FinickyFelineGame()
@@ -38,6 +40,7 @@ namespace FinickyFeline
 
         protected override void Initialize()
         {
+ 
             // TODO: Add your initialization logic here
             inputManager = new InputManager();
             cloveSprite = new CloveSprite();
@@ -94,6 +97,8 @@ namespace FinickyFeline
             foreach(var salmon in salmons) salmon.LoadContent(Content);
             foreach(var tuna in tunas) tuna.LoadContent(Content);
             foreach(var chicken in chickens) chicken.LoadContent(Content);
+
+            ref32 = Content.Load<Texture2D>("32x32");
         }
 
         protected override void Update(GameTime gameTime)
@@ -172,6 +177,7 @@ namespace FinickyFeline
 
             // TODO: Add your drawing code here
             spriteBatch.Begin();
+            
             spriteBatch.Draw(title, new Vector2(120, 100), Color.White);
             foreach (var kibble in kibbles) kibble.Draw(gameTime, spriteBatch);
             foreach (var shrimp in shrimps) shrimp.Draw(gameTime, spriteBatch);
@@ -182,6 +188,9 @@ namespace FinickyFeline
             spriteBatch.DrawString(dosis, "Exit game - Press Back or ESC", new Vector2(GraphicsDevice.Viewport.Width/3  + 10,GraphicsDevice.Viewport.Height - 30), Color.Black );
             mouseSprite.Draw(gameTime, spriteBatch);
             cloveSprite.Draw(gameTime, spriteBatch);
+
+            spriteBatch.Draw(ref32, new Vector2(320, 268), Color.White);
+
             spriteBatch.End();
 
             base.Draw(gameTime);

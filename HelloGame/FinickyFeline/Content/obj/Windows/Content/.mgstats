@@ -1,4 +1,5 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/32x32.png","C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/32x32.xnb","TextureProcessor","Texture2DContent",2511,4181,0.1225852
 "C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/clovespritesheet.png","C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/clovespritesheet.xnb","TextureProcessor","Texture2DContent",15545,65621,0.1262378
 "C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/dosis.spritefont","C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/dosis.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21538,0.0800397
 "C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/finickyfelinetitle.png","C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/finickyfelinetitle.xnb","TextureProcessor","Texture2DContent",43986,300085,0.0103577
