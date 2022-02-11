@@ -77,7 +77,7 @@ namespace FinickyFeline
             tunas = new Tuna[]
                 { 
                     new Tuna(new Vector2(514, 20)),
-                    new Tuna(new Vector2(54, 370))
+                    new Tuna(new Vector2(514, 370))
                 };
             chickens = new Chicken[]
                 {

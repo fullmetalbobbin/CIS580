@@ -31,7 +31,7 @@ namespace FinickyFeline
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(beefTexture, new Vector2(286, 20), new Rectangle(128, 64, 64, 64), Color.White);
+            spriteBatch.Draw(beefTexture, beefPosition, new Rectangle(128, 64, 64, 64), Color.White);
         }
 
     }
