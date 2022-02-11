@@ -14,6 +14,16 @@ namespace FinickyFeline
 
         private Vector2 shrimpPosition;
 
+        private BoundingRectangle shrimpBounds;
+
+        public bool Consumed { get; set; } = false;
+
+        public Shrimp(Vector2 position)
+        {
+            this.shrimpPosition = position;
+            this.shrimpBounds = new BoundingRectangle(position + new Vector2(10, 10), 64, 64);
+        }
+
         public void LoadContent(ContentManager content)
         {
             shrimpTexture = content.Load<Texture2D>("foodspritesheet");
@@ -21,9 +31,7 @@ namespace FinickyFeline
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(shrimpTexture, new Vector2(172, 20), new Rectangle(64, 64, 64, 64), Color.White);
-            spriteBatch.Draw(shrimpTexture, new Vector2(172, 370), new Rectangle(64, 64, 64, 64), Color.White);
-
+            spriteBatch.Draw(shrimpTexture, shrimpPosition, new Rectangle(64, 64, 64, 64), Color.White);
         }
 
     }

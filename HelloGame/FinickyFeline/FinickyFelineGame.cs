@@ -18,22 +18,22 @@ namespace FinickyFeline
         private SpriteFont dosis;
 
         //private Texture2D kibbles;
-        private Kibble kibble;
+        private Kibble[] kibbles;
 
         //private Texture2D shrimp;
-        private Shrimp shrimp;
+        private Shrimp[] shrimps;
 
         //private Texture2D beef;
-        private Beef beef;
+        private Beef[] beefs;
 
         //private Texture2D salmon;
-        private Salmon salmon;
+        private Salmon[] salmons;
 
         //private Texture2D tuna;
-        private Tuna tuna;
+        private Tuna[] tunas;
 
         //private Texture2D chicken;
-        private Chicken chicken;
+        private Chicken[] chickens;
 
 
 
@@ -54,12 +54,38 @@ namespace FinickyFeline
             cloveSprite = new CloveSprite();
             voomSprite = new VoomSprite();
             mouseSprite = new MouseSprite();
-            kibble = new Kibble();
-            shrimp = new Shrimp();
-            beef = new Beef();
-            salmon = new Salmon();
-            tuna = new Tuna();
-            chicken = new Chicken();
+            kibbles = new Kibble[]
+                { 
+                    new Kibble(new Vector2(58, 20)),
+                    new Kibble(new Vector2(58, 370))
+                };
+            shrimps = new Shrimp[]
+                { 
+                    new Shrimp(new Vector2(172, 20)),
+                    new Shrimp(new Vector2(172, 370))
+                };
+            beefs = new Beef[]
+                { 
+                    new Beef(new Vector2(286, 20)),
+                    new Beef(new Vector2(286, 370))
+                };
+            salmons = new Salmon[]
+                { 
+                    new Salmon(new Vector2(400, 20)),
+                    new Salmon(new Vector2(400, 370))
+                };
+            tunas = new Tuna[]
+                { 
+                    new Tuna(new Vector2(514, 20)),
+                    new Tuna(new Vector2(54, 370))
+                };
+            chickens = new Chicken[]
+                {
+                    new Chicken(new Vector2(628, 20)),
+                    new Chicken(new Vector2(628, 370))
+                };
+            //chicken = new Chicken(new Vector2(628, 20));
+            //chicken = new Chicken(new Vector2(628, 370));
 
             base.Initialize();
         }
@@ -75,12 +101,12 @@ namespace FinickyFeline
             title = Content.Load<Texture2D>("finickyfelinetitle");
             dosis = Content.Load<SpriteFont>("dosis");
 
-            kibble.LoadContent(Content);
-            shrimp.LoadContent(Content);
-            beef.LoadContent(Content);
-            salmon.LoadContent(Content);
-            tuna.LoadContent(Content);
-            chicken.LoadContent(Content);
+            foreach(var kibble in kibbles) kibble.LoadContent(Content);
+            foreach(var shrimp in shrimps) shrimp.LoadContent(Content);
+            foreach(var beef in beefs) beef.LoadContent(Content);
+            foreach(var salmon in salmons) salmon.LoadContent(Content);
+            foreach(var tuna in tunas) tuna.LoadContent(Content);
+            foreach(var chicken in chickens) chicken.LoadContent(Content);
 
             //kibbles = Content.Load<Texture2D>("foodspritesheet");
             //shrimp = Content.Load<Texture2D>("foodspritesheet");
@@ -114,14 +140,16 @@ namespace FinickyFeline
             //cloveSprite.Draw(gameTime, spriteBatch);
             //voomSprite.Draw(gameTime, spriteBatch);
             spriteBatch.Draw(title, new Vector2(120, 100), Color.White);
+            foreach(var)
 
-            kibble.Draw(gameTime, spriteBatch);
-            shrimp.Draw(gameTime, spriteBatch);
-            beef.Draw(gameTime, spriteBatch);
-            salmon.Draw(gameTime, spriteBatch);
+            /*
+            kibbles.Draw(gameTime, spriteBatch);
+            shrimps.Draw(gameTime, spriteBatch);
+            beefs.Draw(gameTime, spriteBatch);
+            salmons.Draw(gameTime, spriteBatch);
             tuna.Draw(gameTime, spriteBatch);
             chicken.Draw(gameTime, spriteBatch);
-
+            */
             /*
             spriteBatch.Draw(kibbles, new Vector2(58, 20), new Rectangle(0, 0, 64, 64), Color.White);
             spriteBatch.Draw(shrimp, new Vector2(172, 20), new Rectangle(64, 64, 64, 64), Color.White);

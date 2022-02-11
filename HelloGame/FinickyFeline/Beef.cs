@@ -14,6 +14,16 @@ namespace FinickyFeline
 
         private Vector2 beefPosition;
 
+        private BoundingRectangle beefBounds;
+
+        public bool Consumed { get; set; } = false;
+
+        public Beef(Vector2 position)
+        {
+            this.beefPosition = position;
+            this.beefBounds = new BoundingRectangle(position + new Vector2(10, 10), 64, 64);
+        }
+
         public void LoadContent(ContentManager content)
         {
             beefTexture = content.Load<Texture2D>("foodspritesheet");
@@ -22,7 +32,6 @@ namespace FinickyFeline
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(beefTexture, new Vector2(286, 20), new Rectangle(128, 64, 64, 64), Color.White);
-            spriteBatch.Draw(beefTexture, new Vector2(286, 370), new Rectangle(128, 64, 64, 64), Color.White);
         }
 
     }

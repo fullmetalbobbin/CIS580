@@ -14,6 +14,16 @@ namespace FinickyFeline
 
         private Vector2 chickenPosition;
 
+        private BoundingRectangle chickenBounds;
+
+        public bool Consumed { get; set; } = false;
+
+        public Chicken(Vector2 position)
+        {
+            this.chickenPosition = position;
+            this.chickenBounds = new BoundingRectangle(position + new Vector2(10,10), 64, 64);
+        }
+
         public void LoadContent(ContentManager content)
         {
             chickenTexture = content.Load<Texture2D>("foodspritesheet");
@@ -21,8 +31,7 @@ namespace FinickyFeline
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(chickenTexture, new Vector2(628, 20), new Rectangle(0, 64, 64, 64), Color.White);
-            spriteBatch.Draw(chickenTexture, new Vector2(628,370), new Rectangle(0, 64, 64, 64), Color.White);
+            spriteBatch.Draw(chickenTexture, chickenPosition, new Rectangle(0, 64, 64, 64), Color.White);
         }
     }
 }

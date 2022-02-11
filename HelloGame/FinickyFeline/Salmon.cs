@@ -14,14 +14,23 @@ namespace FinickyFeline
 
         private Vector2 salmonPosition;
 
+        private BoundingRectangle salmonBounds;
+
+        public bool Consumed { get; set; } = false;
+
+        public Salmon(Vector2 position)
+        {
+            this.salmonPosition = position;
+            this.salmonBounds = new BoundingRectangle(position + new Vector2(10, 10), 64, 64);
+        }
+
         public void LoadContent(ContentManager content)
         {
             salmonTexture = content.Load<Texture2D>("foodspritesheet");
         }
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(salmonTexture, new Vector2(400, 20), new Rectangle(128, 0, 64, 64), Color.White);
-            spriteBatch.Draw(salmonTexture, new Vector2(400, 370), new Rectangle(128, 0, 64, 64), Color.White);
+            spriteBatch.Draw(salmonTexture, salmonPosition, new Rectangle(128, 0, 64, 64), Color.White); ;
         }
     }
 }

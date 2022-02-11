@@ -14,6 +14,16 @@ namespace FinickyFeline
 
         private Vector2 tunaPosition;
 
+        private BoundingRectangle tunaBounds;
+
+        public bool Consumed { get; set; } = false;
+
+        public Tuna(Vector2 position)
+        {
+            this.tunaPosition = position;
+            this.tunaBounds = new BoundingRectangle(position + new Vector2(10, 10), 64, 64);
+        }
+
         public void LoadContent(ContentManager content)
         {
             tunaTexture = content.Load<Texture2D>("foodspritesheet");
@@ -21,8 +31,7 @@ namespace FinickyFeline
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(tunaTexture, new Vector2(514, 20), new Rectangle(64, 0, 64, 64), Color.White);
-            spriteBatch.Draw(tunaTexture, new Vector2(514, 370), new Rectangle(64, 0, 64, 64), Color.White);
+            spriteBatch.Draw(tunaTexture, tunaPosition, new Rectangle(64, 0, 64, 64), Color.White);
         }
     }
 }
