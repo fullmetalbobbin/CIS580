@@ -140,7 +140,13 @@ namespace FinickyFeline
             //cloveSprite.Draw(gameTime, spriteBatch);
             //voomSprite.Draw(gameTime, spriteBatch);
             spriteBatch.Draw(title, new Vector2(120, 100), Color.White);
-            foreach(var)
+
+            foreach (var kibble in kibbles) kibble.Draw(gameTime, spriteBatch);
+            foreach (var shrimp in shrimps) shrimp.Draw(gameTime, spriteBatch);
+            foreach (var beef in beefs) beef.Draw(gameTime, spriteBatch);
+            foreach (var salmon in salmons) salmon.Draw(gameTime, spriteBatch);
+            foreach (var tuna in tunas) tuna.Draw(gameTime, spriteBatch);
+            foreach (var chicken in chickens) chicken.Draw(gameTime, spriteBatch);
 
             /*
             kibbles.Draw(gameTime, spriteBatch);
