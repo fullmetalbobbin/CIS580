@@ -1,7 +1,3 @@
-C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.AssemblyInfoInputs.cache
-C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.AssemblyInfo.cs
-C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.csproj.CoreCompileInputs.cache
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\Content\clovespritesheet.xnb
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\Content\dosis.xnb
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\Content\finickyfelinetitle.xnb
@@ -36,6 +32,10 @@ C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcore
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\runtimes\win7-arm\native\libuv.dll
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\libuv.dll
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\bin\Debug\netcoreapp3.1\runtimes\win7-x86\native\libuv.dll
+C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.AssemblyInfoInputs.cache
+C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.AssemblyInfo.cs
+C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.csproj.CoreCompileInputs.cache
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.csproj.CopyComplete
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.dll
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.pdb

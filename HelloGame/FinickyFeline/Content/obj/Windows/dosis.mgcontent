@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/dosis.spritefont</SourceFile>
-  <SourceTime>2022-02-10T20:46:05.324543-06:00</SourceTime>
+  <SourceTime>2022-02-11T14:45:14.3401102-06:00</SourceTime>
   <DestFile>C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/dosis.xnb</DestFile>
-  <DestTime>2022-02-10T22:26:06.2430614-06:00</DestTime>
+  <DestTime>2022-02-11T14:48:35.4050057-06:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
   <ImporterTime>2020-08-10T11:17:54-05:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>
