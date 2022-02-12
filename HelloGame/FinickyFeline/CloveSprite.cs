@@ -22,10 +22,11 @@ namespace FinickyFeline
         private Texture2D cloveTexture;
 
         private Vector2 clovePosition = new Vector2(375, 300);
+        //private Vector2 clovePosition = new Vector2(100 -25,100 +25);
 
         private bool turned = false;
 
-        private BoundingRectangle cloveBounds = new BoundingRectangle(new Vector2(375 + 25, 300 - 32), 32, 32);
+        private BoundingRectangle cloveBounds = new BoundingRectangle(new Vector2(375, 300 -25),20, 20);
 
         public BoundingRectangle CloveBounds => cloveBounds;
 
@@ -58,14 +59,24 @@ namespace FinickyFeline
                 turned = false;
             }
 
-            cloveBounds.X = clovePosition.X - 64;
-            cloveBounds.Y = clovePosition.Y - 32;
+            if (turned)
+            {
+                cloveBounds.X = clovePosition.X - 75;
+                cloveBounds.Y = clovePosition.Y - 25;
+            }
+            else 
+            {
+                cloveBounds.X = clovePosition.X;
+                cloveBounds.Y = clovePosition.Y - 25;
+            }
+
+
         }
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             SpriteEffects spriteEffects = (turned) ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
-            cloveBounds = (turned) ? new BoundingRectangle(new Vector2 (clovePosition.X -55, clovePosition.Y -32), 32, 32) : new BoundingRectangle(new Vector2(clovePosition.X +25, clovePosition.Y -32), 32, 32);
+            //cloveBounds = (turned) ? new BoundingRectangle(new Vector2 (clovePosition.X -85, clovePosition.Y -10), 32, 32) : new BoundingRectangle(new Vector2(clovePosition.X -25, clovePosition.Y +25), 32, 32);
             spriteBatch.Draw(cloveTexture, clovePosition, null, CloveColor, 0, new Vector2 (64,64), 1.0f, spriteEffects, 0);
         }
 

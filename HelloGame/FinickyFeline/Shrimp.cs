@@ -23,7 +23,7 @@ namespace FinickyFeline
         public Shrimp(Vector2 position)
         {
             this.shrimpPosition = position;
-            this.shrimpBounds = new BoundingRectangle(position + new Vector2(10, 10), 64, 64);
+            this.shrimpBounds = new BoundingRectangle(new Vector2(this.shrimpPosition.X -10, this.shrimpPosition.Y -10), 32,32);
         }
 
         public void LoadContent(ContentManager content)

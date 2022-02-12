@@ -23,7 +23,7 @@ namespace FinickyFeline
         public Tuna(Vector2 position)
         {
             this.tunaPosition = position;
-            this.tunaBounds = new BoundingRectangle(new Vector2(this.tunaPosition.X, this.tunaPosition.Y +16), 64, 32);
+            this.tunaBounds = new BoundingRectangle(new Vector2(this.tunaPosition.X - 20, this.tunaPosition.Y -15), 64, 32);
         }
 
         public void LoadContent(ContentManager content)

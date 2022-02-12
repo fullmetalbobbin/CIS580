@@ -119,7 +119,7 @@ namespace FinickyFeline
                 {
                     kibble.Consumed = true;
                     //PLAY VOOM ANIMATION HERE
-                    cloveSprite.CloveColor = Color.Green;
+                    cloveSprite.CloveColor = Color.OliveDrab;
                 }
             }
             foreach (var shrimp in shrimps)
@@ -128,7 +128,7 @@ namespace FinickyFeline
                 {
                     shrimp.Consumed = true;
                     //PLAY PURR AUDIO HERE... whenever you make it
-                    cloveSprite.CloveColor = Color.LightSalmon;
+                    cloveSprite.CloveColor = Color.White;
                 }
             }
             foreach (var beef in beefs)
@@ -137,7 +137,7 @@ namespace FinickyFeline
                 {
                     beef.Consumed = true;
                     //PLAY VOOM ANIMATION HERE
-                    cloveSprite.CloveColor = Color.Green;
+                    cloveSprite.CloveColor = Color.GreenYellow;
                 }
             }
             foreach (var salmon in salmons)
@@ -146,7 +146,7 @@ namespace FinickyFeline
                 {
                     salmon.Consumed = true;
                     //PLAY PURR AUDIO HERE... whenever you make it
-                    cloveSprite.CloveColor = Color.Yellow;
+                    cloveSprite.CloveColor = Color.White;
                 }
             }
             foreach (var tuna in tunas)
@@ -155,7 +155,7 @@ namespace FinickyFeline
                 {
                     tuna.Consumed = true;
                     //PLAY PURR AUDIO HERE... whenever you make it
-                    cloveSprite.CloveColor = Color.DimGray;
+                    cloveSprite.CloveColor = Color.White;
                 }
             }
             foreach (var chicken in chickens)
@@ -164,7 +164,7 @@ namespace FinickyFeline
                 {
                     chicken.Consumed = true;
                     //PLAY VOOM ANIMATION HERE
-                    cloveSprite.CloveColor = Color.GreenYellow;
+                    cloveSprite.CloveColor = Color.YellowGreen;
                 }
             }
 
@@ -189,7 +189,7 @@ namespace FinickyFeline
             mouseSprite.Draw(gameTime, spriteBatch);
             cloveSprite.Draw(gameTime, spriteBatch);
 
-            spriteBatch.Draw(ref32, new Vector2(320, 268), Color.White);
+            //spriteBatch.Draw(ref32, new Vector2(350,325), Color.White);
 
             spriteBatch.End();
 

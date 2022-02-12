@@ -24,7 +24,7 @@ namespace FinickyFeline
         {
             this.salmonPosition = position;
             //this.salmonBounds = new BoundingRectangle(position + new Vector2(10, 10), 64, 64);
-            this.salmonBounds = new BoundingRectangle(new Vector2(this.salmonPosition.X, this.salmonPosition.Y + 16), 64, 32);
+            this.salmonBounds = new BoundingRectangle(new Vector2(this.salmonPosition.X -20, this.salmonPosition.Y -15), 64, 32);
         }
 
         public void LoadContent(ContentManager content)

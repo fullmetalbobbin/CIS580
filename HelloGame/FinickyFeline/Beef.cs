@@ -23,7 +23,7 @@ namespace FinickyFeline
         public Beef(Vector2 position)
         {
             this.beefPosition = position;
-            this.beefBounds = new BoundingRectangle(position + new Vector2(10, 10), 64, 64);
+            this.beefBounds = new BoundingRectangle(new Vector2(this.beefPosition.X, this.beefPosition.Y), 40,40);
         }
 
         public void LoadContent(ContentManager content)

@@ -24,7 +24,7 @@ namespace FinickyFeline
         public Kibble(Vector2 position)
         {
             this.kibblePosition = position;
-            this.kibbleBounds = new BoundingRectangle(position + new Vector2(10, 10), 64, 64);
+            this.kibbleBounds = new BoundingRectangle(new Vector2(this.kibblePosition.X, this.kibblePosition.Y), 32,32);
         }
 
         public void LoadContent(ContentManager content)

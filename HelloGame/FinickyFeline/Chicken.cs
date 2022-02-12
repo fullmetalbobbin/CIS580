@@ -23,7 +23,7 @@ namespace FinickyFeline
         public Chicken(Vector2 position)
         {
             this.chickenPosition = position;
-            this.chickenBounds = new BoundingRectangle(position + new Vector2(10,10), 64, 64);
+            this.chickenBounds = new BoundingRectangle(new Vector2(this.chickenPosition.X -10, this.chickenPosition.Y -10), 32,32);
         }
 
         public void LoadContent(ContentManager content)
