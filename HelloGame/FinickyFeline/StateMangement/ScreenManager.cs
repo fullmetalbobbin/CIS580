@@ -9,5 +9,12 @@ namespace FinickyFeline.StateMangement
 {
     public class ScreenManager
     {
+        private readonly ContentManager content;
+
+
+        public ScreenManager(Game game)
+        {
+            content = new ContentManager(game.Services, "Content");
+        }
     }
 }

@@ -6,9 +6,9 @@ namespace FinickyFeline.StateMangement
 {
     public enum ScreenState
     {
-        TransitioningToActive,
+        TransitionToActive,
         Active,
-        TransitioningtToHidden,
+        TransitionToHidden,
         Hidden
     }
 }

@@ -1,11 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using FinickyFeline.StateMangement;
 
 namespace FinickyFeline
 {
     public class FinickyFelineGame : Game
     {
+        private readonly ScreenManager screenManager;
+
+
+
         private InputManager inputManager;
 
         private GraphicsDeviceManager graphics;
@@ -32,10 +37,18 @@ namespace FinickyFeline
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            IsMouseVisible = false;
+            IsMouseVisible = true;
             Window.Title = "The Finicky Feline";
             graphics.PreferredBackBufferHeight = 500;
             graphics.PreferredBackBufferWidth = 750;
+
+            var screenFactory = new ScreenFactory();
+            Services.AddService(typeof(IScreenFactory), screenFactory);
+
+            screenManager = new ScreenManager(this);
+            //Components.Add(screenManager);
+
+            //AddInitalScreens();
         }
 
         protected override void Initialize()

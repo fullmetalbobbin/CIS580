@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FinickyFeline.StateManger
+namespace FinickyFeline.StateMangement
 {
     public interface IScreenFactory
     {
