@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/clovespritesheet.png</SourceFile>
+  <SourceFile>C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/clovespritesheet.png</SourceFile>
   <SourceTime>2022-02-25T14:03:09.957046-06:00</SourceTime>
-  <DestFile>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/clovespritesheet.xnb</DestFile>
-  <DestTime>2022-02-25T15:28:46.7549394-06:00</DestTime>
+  <DestFile>C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/clovespritesheet.xnb</DestFile>
+  <DestTime>2022-02-25T16:07:39.6571308-06:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T11:17:54-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
