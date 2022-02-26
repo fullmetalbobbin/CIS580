@@ -34,10 +34,10 @@ namespace FinickyFeline.StateMangement
         public virtual void UnloadScreen()
         { }
 
-        public virtual void Update()
+        public virtual void Update(GameTime gameTime, bool otherScreenHasFocus)
         { }
 
-        public virtual void Draw()
+        public virtual void Draw(GameTime gameTime, bool otherScreenHasFocus)
         { }
 
         public void ExitScreen()

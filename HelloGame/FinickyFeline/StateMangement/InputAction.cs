@@ -27,7 +27,7 @@ namespace FinickyFeline.StateMangement
 
             if (firstPress)
             {
-                keyTest = inputState
+                //keyTest = inputState
             }
             return false;
         }

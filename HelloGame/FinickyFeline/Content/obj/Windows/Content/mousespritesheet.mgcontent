@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/mousespritesheet.png</SourceFile>
-  <SourceTime>2022-02-25T14:03:09.9590418-06:00</SourceTime>
-  <DestFile>C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/mousespritesheet.xnb</DestFile>
-  <DestTime>2022-02-25T16:07:39.8037405-06:00</DestTime>
+  <SourceFile>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/mousespritesheet.png</SourceFile>
+  <SourceTime>2022-02-25T16:45:30.7416964-06:00</SourceTime>
+  <DestFile>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/mousespritesheet.xnb</DestFile>
+  <DestTime>2022-02-25T18:29:17.0482037-06:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T11:17:54-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
