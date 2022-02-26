@@ -28,5 +28,12 @@ namespace FinickyFeline
             get => itemPosition;
             set => itemPosition = value;
         }
+
+        public event EventHandler<EventArgs> Selected;
+
+        protected internal virtual void OnSelectedItem(EventArgs e)
+        {
+            Selected?.Invoke(this, new EventArgs());
+        }
     }
 }
