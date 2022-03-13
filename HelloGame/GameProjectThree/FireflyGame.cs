@@ -56,7 +56,7 @@ namespace GameProjectThree
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.DimGray);
 
             float fireflyY = MathHelper.Clamp(firefly.FireflyPosition.Y, 500, 135000);
             float offsetY = 500 - fireflyY;
