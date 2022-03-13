@@ -77,11 +77,11 @@ namespace GameProjectThree
             transform = Matrix.CreateTranslation(offsetY, 0, 0);
             _spriteBatch.Begin(transformMatrix: transform);
             _spriteBatch.Draw(foreground, Vector2.Zero, Color.White);
-            firefly.Draw(gameTime, _spriteBatch);
             _spriteBatch.End();
 
             transform = Matrix.CreateTranslation(offsetY * 1.5f, 0, 0);
-            _spriteBatch.Begin(transformMatrix: transform);
+            _spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Additive, transformMatrix: transform);
+            firefly.Draw(gameTime, _spriteBatch);
             _spriteBatch.Draw(superground, Vector2.Zero, Color.White);
             _spriteBatch.End();
 

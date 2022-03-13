@@ -18,7 +18,7 @@ namespace GameProjectThree
 
         Game game;
         Texture2D fireflyTexture;
-        Vector2 fireflyPosition;
+        public Vector2 FireflyPosition;
         Vector2 fireflyDirection;
         Vector2 fireflyVelocity;
 
@@ -28,7 +28,7 @@ namespace GameProjectThree
         public Firefly(Game game)
         {
             this.game = game;
-            this.fireflyPosition = new Vector2(250, 250);
+            this.FireflyPosition = new Vector2(250, 250);
             this.fireflyDirection = -Vector2.UnitY;
         }
 
