@@ -27,7 +27,7 @@ namespace GameProjectThree
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-            firefly = new Firefly();
+            firefly = new Firefly(this);
 
             base.Initialize();
         }
