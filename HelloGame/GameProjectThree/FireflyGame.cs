@@ -21,6 +21,8 @@ namespace GameProjectThree
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
+            _graphics.PreferredBackBufferHeight = 1500;
+            _graphics.PreferredBackBufferWidth = 500;
             _graphics.GraphicsProfile = GraphicsProfile.HiDef;
         }
 
@@ -42,6 +44,7 @@ namespace GameProjectThree
             background = Content.Load<Texture2D>("background");
             midground = Content.Load<Texture2D>("midground");
             foreground = Content.Load<Texture2D>("foreground");
+            superground = Content.Load<Texture2D>("superground");
         }
 
         protected override void Update(GameTime gameTime)
@@ -65,24 +68,24 @@ namespace GameProjectThree
             // TODO: Add your drawing code here
             Matrix transform;
 
-            transform = Matrix.CreateTranslation(offsetY * 0.25f, 0, 0);
+            transform = Matrix.CreateTranslation(0, offsetY * 0.1f, 0);
             _spriteBatch.Begin(transformMatrix: transform);
             _spriteBatch.Draw(background, Vector2.Zero, Color.White);
             _spriteBatch.End();
 
-            transform = Matrix.CreateTranslation(offsetY * 0.5f, 0, 0);
+            transform = Matrix.CreateTranslation(0, offsetY * 0.5f, 0);
             _spriteBatch.Begin(transformMatrix: transform);
             _spriteBatch.Draw(midground, Vector2.Zero, Color.White);
             _spriteBatch.End();
 
-            transform = Matrix.CreateTranslation(offsetY * 0.75f, 0, 0);
+            transform = Matrix.CreateTranslation(0, offsetY, 0);
             _spriteBatch.Begin(transformMatrix: transform);
+            firefly.Draw(gameTime, _spriteBatch);
             _spriteBatch.Draw(foreground, Vector2.Zero, Color.White);
             _spriteBatch.End();
 
-            transform = Matrix.CreateTranslation(offsetY, 0, 0);
-            _spriteBatch.Begin(transformMatrix: transform);
-            firefly.Draw(gameTime, _spriteBatch);
+            transform = Matrix.CreateTranslation(0, offsetY * 1.25f, 0);
+            _spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, transformMatrix: transform);
             _spriteBatch.Draw(superground, Vector2.Zero, Color.White);
             _spriteBatch.End();
 

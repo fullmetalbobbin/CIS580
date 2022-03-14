@@ -10,8 +10,8 @@ namespace GameProjectThree
 {
     public class Firefly
     {
-        const float LINEAR_ACCELERATION = 5;
-        const float ANGULAR_ACCELERATION = 2;
+        const float LINEAR_ACCELERATION = 1;
+        const float ANGULAR_ACCELERATION = 1;
 
 
         private Rectangle firelyBounds = new Rectangle(0,0, 64,64);
@@ -49,8 +49,8 @@ namespace GameProjectThree
             Vector2 fireflyAcceleration = new Vector2(0,0);
             float fireflyAngularAcceleration = 0;
 
-            if (keyboardState.IsKeyDown(Keys.Up)) fireflyPosition -= Vector2.UnitY * time * 75;
-            if (keyboardState.IsKeyDown(Keys.Down)) fireflyPosition += Vector2.UnitY * time * 125;
+            if (keyboardState.IsKeyDown(Keys.Up)) FireflyPosition -= Vector2.UnitY * time * 75;
+            if (keyboardState.IsKeyDown(Keys.Down)) FireflyPosition += Vector2.UnitY * time * 125;
 
             if (keyboardState.IsKeyDown(Keys.Left))
             {
@@ -74,16 +74,16 @@ namespace GameProjectThree
             fireflyDirection.Y = (float)-Math.Cos(fireflyAngle);
 
             fireflyVelocity += fireflyAcceleration * time;
-            fireflyPosition += fireflyVelocity * time;
+            FireflyPosition += fireflyVelocity * time;
 
             var viewport = game.GraphicsDevice.Viewport;
-            if (fireflyPosition.X < 0) fireflyPosition.X = viewport.Width;
+            if (FireflyPosition.X < 0 || FireflyPosition.X > 500) FireflyPosition.X = viewport.Width;
 
         }
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(fireflyTexture, fireflyPosition, firelyBounds, Color.White);
+            spriteBatch.Draw(fireflyTexture, FireflyPosition, null, Color.White, fireflyAngle, new Vector2(10, 10), 1f, SpriteEffects.None, 0);
         }
 
     }
