@@ -28,7 +28,7 @@ namespace GameProjectThree
         {
             // TODO: Add your initialization logic here
             firefly = new Firefly(this);
-            Components.Add("");
+            //Components.Add("firefly");
 
             base.Initialize();
         }
@@ -39,9 +39,9 @@ namespace GameProjectThree
             firefly.LoadContent(Content);
 
             // TODO: use this.Content to load your game content here
-            background = Content.Load<Texture2D>("");
-            midground = Content.Load<Texture2D>("");
-            foreground = Content.Load<Texture2D>("");
+            background = Content.Load<Texture2D>("background");
+            midground = Content.Load<Texture2D>("midground");
+            foreground = Content.Load<Texture2D>("foreground");
         }
 
         protected override void Update(GameTime gameTime)

@@ -38,7 +38,7 @@ namespace GameProjectThree
 
         public void LoadContent(ContentManager content)
         {
-            fireflyTexture = content.Load<Texture2D>("");
+            fireflyTexture = content.Load<Texture2D>("firefly");
         }
 
         public void Update(GameTime gameTime)
