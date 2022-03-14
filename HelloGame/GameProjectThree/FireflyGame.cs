@@ -28,6 +28,7 @@ namespace GameProjectThree
         {
             // TODO: Add your initialization logic here
             firefly = new Firefly(this);
+            Components.Add("");
 
             base.Initialize();
         }
@@ -80,7 +81,7 @@ namespace GameProjectThree
             _spriteBatch.End();
 
             transform = Matrix.CreateTranslation(offsetY, 0, 0);
-            _spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Additive, transformMatrix: transform);
+            _spriteBatch.Begin(transformMatrix: transform);
             firefly.Draw(gameTime, _spriteBatch);
             _spriteBatch.Draw(superground, Vector2.Zero, Color.White);
             _spriteBatch.End();

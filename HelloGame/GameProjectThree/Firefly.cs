@@ -25,12 +25,16 @@ namespace GameProjectThree
         float fireflyAngle;
         float fireflyAngularVelocity;
 
+        BlendState BlendState;
+
         public Firefly(Game game)
         {
             this.game = game;
             this.FireflyPosition = new Vector2(250, 250);
             this.fireflyDirection = -Vector2.UnitY;
+            BlendState = BlendState.Additive;
         }
+
 
         public void LoadContent(ContentManager content)
         {
