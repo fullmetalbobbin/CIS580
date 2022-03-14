@@ -15,6 +15,8 @@ namespace GameProjectThree
         private Texture2D superground;
 
         private Firefly firefly;
+        private Starlight[] starlights;
+        private int starlightLeft;
 
         public FireflyGame()
         {
@@ -32,6 +34,22 @@ namespace GameProjectThree
             firefly = new Firefly(this);
             //Components.Add("firefly");
 
+            System.Random chaos = new System.Random();
+            starlights = new Starlight[]
+                {
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000)),
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000)),
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000)),
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000)),
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000)),
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000)),
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000)),
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000)),
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000)),
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000))
+                };
+            starlightLeft = starlights.Length;
+
             base.Initialize();
         }
 
@@ -45,6 +63,8 @@ namespace GameProjectThree
             midground = Content.Load<Texture2D>("midground");
             foreground = Content.Load<Texture2D>("foreground");
             superground = Content.Load<Texture2D>("superground");
+
+            foreach (var star in starlights) star.LoadContent(Content);
         }
 
         protected override void Update(GameTime gameTime)
@@ -80,8 +100,9 @@ namespace GameProjectThree
 
             transform = Matrix.CreateTranslation(0, offsetY, 0);
             _spriteBatch.Begin(transformMatrix: transform);
+            foreach (var star in starlights) star.Draw(gameTime, _spriteBatch);
             firefly.Draw(gameTime, _spriteBatch);
-            _spriteBatch.Draw(foreground, Vector2.Zero, Color.White);
+            _spriteBatch.Draw(foreground, Vector2.Zero, Color.White);            
             _spriteBatch.End();
 
             transform = Matrix.CreateTranslation(0, offsetY * 1.25f, 0);

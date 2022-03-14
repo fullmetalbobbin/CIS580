@@ -39,3 +39,5 @@ C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\obj\Release\ne
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\obj\Release\netcoreapp3.1\GameProjectThree.dll
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\obj\Release\netcoreapp3.1\GameProjectThree.pdb
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\obj\Release\netcoreapp3.1\GameProjectThree.genruntimeconfig.cache
+C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\obj\Release\netcoreapp3.1\GameProjectThree.csproj.AssemblyReference.cache
+C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\bin\Release\netcoreapp3.1\Content\starlight.xnb

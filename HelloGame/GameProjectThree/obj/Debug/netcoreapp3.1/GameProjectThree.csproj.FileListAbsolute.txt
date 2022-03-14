@@ -40,3 +40,4 @@ C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\obj\Debug\netc
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\obj\Debug\netcoreapp3.1\GameProjectThree.pdb
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\obj\Debug\netcoreapp3.1\GameProjectThree.genruntimeconfig.cache
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\bin\Debug\netcoreapp3.1\Content\superground.xnb
+C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\bin\Debug\netcoreapp3.1\Content\starlight.xnb
