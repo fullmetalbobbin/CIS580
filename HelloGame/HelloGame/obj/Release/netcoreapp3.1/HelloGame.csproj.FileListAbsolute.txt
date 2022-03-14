@@ -27,7 +27,6 @@ C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\HelloGame\bin\Release\netcoreap
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\HelloGame\bin\Release\netcoreapp3.1\runtimes\win7-arm\native\libuv.dll
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\HelloGame\bin\Release\netcoreapp3.1\runtimes\win7-x64\native\libuv.dll
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\HelloGame\bin\Release\netcoreapp3.1\runtimes\win7-x86\native\libuv.dll
-C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\HelloGame\obj\Release\netcoreapp3.1\HelloGame.csproj.AssemblyReference.cache
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\HelloGame\obj\Release\netcoreapp3.1\HelloGame.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\HelloGame\obj\Release\netcoreapp3.1\HelloGame.AssemblyInfoInputs.cache
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\HelloGame\obj\Release\netcoreapp3.1\HelloGame.AssemblyInfo.cs

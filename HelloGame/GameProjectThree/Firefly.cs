@@ -83,7 +83,7 @@ namespace GameProjectThree
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(fireflyTexture, FireflyPosition, null, Color.White, fireflyAngle, new Vector2(10, 10), 1f, SpriteEffects.None, 0);
+            spriteBatch.Draw(fireflyTexture, FireflyPosition, null, Color.White, fireflyAngle, new Vector2(10, 10), 1f, SpriteEffects.FlipVertically, 0);
         }
 
     }

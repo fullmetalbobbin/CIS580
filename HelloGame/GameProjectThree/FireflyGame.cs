@@ -86,7 +86,7 @@ namespace GameProjectThree
 
             transform = Matrix.CreateTranslation(0, offsetY * 1.25f, 0);
             _spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, transformMatrix: transform);
-            _spriteBatch.Draw(superground, Vector2.Zero, Color.White);
+            _spriteBatch.Draw(superground, Vector2.Zero, Color.YellowGreen);
             _spriteBatch.End();
 
             base.Draw(gameTime);
