@@ -14,7 +14,13 @@ namespace GameProjectThree
         const float ANGULAR_ACCELERATION = 1;
 
 
-        private Rectangle firelyBounds = new Rectangle(0,0, 64,64);
+        //private Rectangle firelyBounds = new Rectangle(0,0, 64,64);
+
+        private BoundingCircle fireflyBounds = new BoundingCircle(new Vector2(250,250), 32);
+
+        public BoundingCircle FireflyBounds => fireflyBounds;
+
+        public Color FireflyColor = Color.White;
 
         Game game;
         Texture2D fireflyTexture;
@@ -32,6 +38,7 @@ namespace GameProjectThree
             this.game = game;
             this.FireflyPosition = new Vector2(250, 250);
             this.fireflyDirection = -Vector2.UnitY;
+            this.fireflyBounds.Center = FireflyPosition;
             BlendState = BlendState.Additive;
         }
 
@@ -49,7 +56,7 @@ namespace GameProjectThree
             Vector2 fireflyAcceleration = new Vector2(0,0);
             float fireflyAngularAcceleration = 0;
 
-            if (keyboardState.IsKeyDown(Keys.Up)) FireflyPosition -= Vector2.UnitY * time * 75;
+            if (keyboardState.IsKeyDown(Keys.Up)) FireflyPosition -= Vector2.UnitY * time * 85;
             if (keyboardState.IsKeyDown(Keys.Down)) FireflyPosition += Vector2.UnitY * time * 125;
 
             if (keyboardState.IsKeyDown(Keys.Left))
@@ -76,6 +83,8 @@ namespace GameProjectThree
             fireflyVelocity += fireflyAcceleration * time;
             FireflyPosition += fireflyVelocity * time;
 
+            fireflyBounds.Center = FireflyPosition;
+
             var viewport = game.GraphicsDevice.Viewport;
             if (FireflyPosition.X < 0 || FireflyPosition.X > 500) FireflyPosition.X = viewport.Width;
 
@@ -83,7 +92,7 @@ namespace GameProjectThree
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(fireflyTexture, FireflyPosition, null, Color.White, fireflyAngle, new Vector2(10, 10), 1f, SpriteEffects.FlipVertically, 0);
+            spriteBatch.Draw(fireflyTexture, FireflyPosition, null, FireflyColor, fireflyAngle, new Vector2(64,64), 1f, SpriteEffects.FlipVertically, 0);
         }
 
     }

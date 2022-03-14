@@ -75,6 +75,17 @@ namespace GameProjectThree
             // TODO: Add your update logic here
             firefly.Update(gameTime);
 
+            //firefly.FireflyColor = Color.White;
+            foreach (var star in starlights)
+            {
+                if (!star.Collected && star.StarlightBounds.WhenStarsCollide(firefly.FireflyBounds))
+                {
+                    //firefly.FireflyColor = Color.Fuchsia;
+                    star.Collected = true;
+                    starlightLeft--;
+                }
+            }
+
             base.Update(gameTime);
         }
 
