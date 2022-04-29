@@ -4,6 +4,7 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/akdreesen/source/repos/CIS580/HelloGame/GameProjectThree/Content/akshar.spritefont</File>
     <File>C:/Users/akdreesen/source/repos/CIS580/HelloGame/GameProjectThree/Content/background.png</File>
     <File>C:/Users/akdreesen/source/repos/CIS580/HelloGame/GameProjectThree/Content/firefly.png</File>
     <File>C:/Users/akdreesen/source/repos/CIS580/HelloGame/GameProjectThree/Content/Firefly4.mp3</File>
@@ -13,6 +14,7 @@
     <File>C:/Users/akdreesen/source/repos/CIS580/HelloGame/GameProjectThree/Content/superground.PNG</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Audio;
 using GameProjectThree.StateManagement;
+using GameProjectThree.Screens;
 
 
 namespace GameProjectThree
@@ -31,12 +32,27 @@ namespace GameProjectThree
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
+
             graphics.PreferredBackBufferHeight = 1500;
             //graphics.PreferredBackBufferHeight = GraphicsDevice.Viewport.Height; put in load?
             
             graphics.PreferredBackBufferWidth = 500;
             graphics.GraphicsProfile = GraphicsProfile.HiDef;
 
+            var screenFactory = new ScreenFactory();
+            Services.AddService(typeof(IScreenFactory), screenFactory);
+
+            screenManager = new ScreenManager(this);
+            Components.Add(screenManager);
+
+            AddInitialScreens();
+
+        }
+
+        private void AddInitialScreens()
+        {
+            screenManager.AddScreen(new BackgroundScreen(), null);
+            screenManager.AddScreen(new MainMenuScreen(), null);
         }
 
         protected override void Initialize()

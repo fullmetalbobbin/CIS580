@@ -41,8 +41,8 @@ namespace GameProjectThree.StateManagement
         protected override void LoadContent()
         {
             SpriteBatch = new SpriteBatch(GraphicsDevice);
-            Font = _content.Load<SpriteFont>("menufont");
-            BlankTexture = _content.Load<Texture2D>("blank");
+            Font = _content.Load<SpriteFont>("akshar");
+            BlankTexture = _content.Load<Texture2D>("foreground");
 
             foreach (var screen in _screens)
             {
@@ -126,6 +126,7 @@ namespace GameProjectThree.StateManagement
         {
             SpriteBatch.Begin();
             SpriteBatch.Draw(BlankTexture, GraphicsDevice.Viewport.Bounds, Color.Black * alpha);
+            //SpriteBatch.Draw(, GraphicsDevice.Viewport.Bounds, Color.Black * alpha);
             SpriteBatch.End();
         }
 

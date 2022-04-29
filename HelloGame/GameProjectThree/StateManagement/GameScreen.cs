@@ -21,7 +21,7 @@ namespace GameProjectThree.StateManagement
         public ScreenState ScreenState { get; set; } = ScreenState.TransitionOn;
 
 
-        public bool IsActive => !_otherScreenHasFocus && (
+        public bool IsActive => /*!_otherScreenHasFocus && */(
             ScreenState == ScreenState.TransitionOn ||
             ScreenState == ScreenState.Active);
 
@@ -42,7 +42,7 @@ namespace GameProjectThree.StateManagement
 
         public virtual void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)
         {
-            _otherScreenHasFocus = otherScreenHasFocus;
+            //_otherScreenHasFocus = otherScreenHasFocus;
 
             if (IsExiting)
             {
