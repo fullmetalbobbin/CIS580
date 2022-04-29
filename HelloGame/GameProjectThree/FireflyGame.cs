@@ -2,12 +2,13 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using Microsoft.Xna.Framework.Audio;
 
 namespace GameProjectThree
 {
     public class FireflyGame : Game
     {
-        private GraphicsDeviceManager _graphics;
+        private GraphicsDeviceManager graphics;
         private SpriteBatch _spriteBatch;
         private Song backgroundMusic;
 
@@ -24,12 +25,15 @@ namespace GameProjectThree
 
         public FireflyGame()
         {
-            _graphics = new GraphicsDeviceManager(this);
+            graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
             _graphics.PreferredBackBufferHeight = 1500;
-            _graphics.PreferredBackBufferWidth = 500;
-            _graphics.GraphicsProfile = GraphicsProfile.HiDef;
+            //graphics.PreferredBackBufferHeight = GraphicsDevice.Viewport.Height;
+            
+
+            graphics.PreferredBackBufferWidth = 500;
+            graphics.GraphicsProfile = GraphicsProfile.HiDef;
 
         }
 
@@ -66,7 +70,8 @@ namespace GameProjectThree
             firefly.LoadContent(Content);
             backgroundMusic = Content.Load<Song>("Firefly4");
             MediaPlayer.IsRepeating = true;
-            MediaPlayer.Play(backgroundMusic    );
+            MediaPlayer.Play(backgroundMusic);
+            // Now resize the height here
 
             // TODO: use this.Content to load your game content here
             background = Content.Load<Texture2D>("background");
