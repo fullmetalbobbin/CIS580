@@ -14,13 +14,16 @@ namespace GameProjectThree
         private Texture2D starlightTexture;
         private Vector2 starlightPosition;
         private BoundingCircle starlightBounds;
+        private Color starlightColor;
+
 
         public BoundingCircle StarlightBounds => starlightBounds;
 
         public bool Collected { get; set; } = false;
 
-        public Starlight(Vector2 position)
+        public Starlight(Vector2 position, Color color)
         {
+            this.starlightColor = color;
             this.starlightPosition = position;
             this.starlightBounds = new BoundingCircle(starlightPosition + new Vector2(16, 16), 16);
         }
@@ -33,7 +36,8 @@ namespace GameProjectThree
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             if (Collected) return;
-            spriteBatch.Draw(starlightTexture, starlightPosition, Color.Fuchsia);
+            //spriteBatch.Draw(starlightTexture, starlightPosition, Color.Fuchsia);
+            spriteBatch.Draw(starlightTexture, starlightPosition,starlightColor);
         }
 
 

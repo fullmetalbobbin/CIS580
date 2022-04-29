@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 
 namespace GameProjectThree
 {
@@ -8,6 +9,7 @@ namespace GameProjectThree
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
+        private Song backgroundMusic;
 
         private Texture2D background;
         private Texture2D midground;
@@ -18,6 +20,8 @@ namespace GameProjectThree
         private Starlight[] starlights;
         private int starlightLeft;
 
+        
+
         public FireflyGame()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -26,27 +30,30 @@ namespace GameProjectThree
             _graphics.PreferredBackBufferHeight = 1500;
             _graphics.PreferredBackBufferWidth = 500;
             _graphics.GraphicsProfile = GraphicsProfile.HiDef;
+
         }
 
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
             firefly = new Firefly(this);
-            //Components.Add("firefly");
 
+            //Components.Add("firefly");
+            Color color = Color.Fuchsia;
             System.Random chaos = new System.Random();
             starlights = new Starlight[]
                 {
-                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000)),
-                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000)),
-                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000)),
-                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000)),
-                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000)),
-                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000)),
-                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000)),
-                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000)),
-                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000)),
-                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000))
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000), color),
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000), color),
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000), color),
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000), color),
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000), color),
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000), color),
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000), color),
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000), color),
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000), color),
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000), color),
+                    new Starlight(new Vector2((float)chaos.NextDouble() * 500, (float)chaos.NextDouble() * 9000), color)
                 };
             starlightLeft = starlights.Length;
 
@@ -57,6 +64,9 @@ namespace GameProjectThree
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             firefly.LoadContent(Content);
+            backgroundMusic = Content.Load<Song>("Firefly4");
+            MediaPlayer.IsRepeating = true;
+            MediaPlayer.Play(backgroundMusic    );
 
             // TODO: use this.Content to load your game content here
             background = Content.Load<Texture2D>("background");
