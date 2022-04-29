@@ -37,6 +37,18 @@
 /processorParam:TextureFormat=Color
 /build:firefly.png
 
+#begin Firefly4.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Firefly4.mp3
+
+#begin Firefly4.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Firefly4.wav
+
 #begin foreground.png
 /importer:TextureImporter
 /processor:TextureProcessor

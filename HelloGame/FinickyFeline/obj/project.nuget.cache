@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+jUzQjUB6Y0n6/EdMbB6Qj82wjMtWuMxYBRPH80dXyoXRiocAqwsjAgz+wl/7kRmhyiSfy68nGyYyqWDxUTbnQ==",
+  "dgSpecHash": "u615RdVf3c5s4zZuf2IAXydAN++c0oArbDPTnWyIKCAQn7UK7qsvuMJmWjUIMXkTGpVq45S906Bx2+kyUKpmMg==",
   "success": true,
   "projectFilePath": "C:\\Users\\akdreesen\\Source\\Repos\\CIS580\\HelloGame\\FinickyFeline\\FinickyFeline.csproj",
   "expectedPackageFiles": [
@@ -26,7 +26,7 @@
     "C:\\Users\\akdreesen\\.nuget\\packages\\monogame.framework.windowsdx\\3.8.0.1641\\monogame.framework.windowsdx.3.8.0.1641.nupkg.sha512",
     "C:\\Users\\akdreesen\\.nuget\\packages\\netstandard.library\\1.6.0\\netstandard.library.1.6.0.nupkg.sha512",
     "C:\\Users\\akdreesen\\.nuget\\packages\\runtime.native.system\\4.0.0\\runtime.native.system.4.0.0.nupkg.sha512",
-    "C:\\Users\\akdreesen\\.nuget\\packages\\runtime.native.system.io.compression\\4.1.0\\runtime.native.system.io.compression.4.1.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\runtime.native.system.io.compression\\4.1.0\\runtime.native.system.io.compression.4.1.0.nupkg.sha512",
     "C:\\Users\\akdreesen\\.nuget\\packages\\runtime.native.system.net.http\\4.0.1\\runtime.native.system.net.http.4.0.1.nupkg.sha512",
     "C:\\Users\\akdreesen\\.nuget\\packages\\runtime.native.system.net.security\\4.0.1\\runtime.native.system.net.security.4.0.1.nupkg.sha512",
     "C:\\Users\\akdreesen\\.nuget\\packages\\runtime.native.system.security.cryptography\\4.0.1\\runtime.native.system.security.cryptography.4.0.1.nupkg.sha512",

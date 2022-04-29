@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>C:/Users/akdreesen/source/repos/CIS580/HelloGame/GameProjectThree/Content/starlight.png</SourceFile>
-  <SourceTime>2022-03-13T22:30:36.2298246-05:00</SourceTime>
+  <SourceTime>2022-04-29T09:36:06.8894653-05:00</SourceTime>
   <DestFile>C:/Users/akdreesen/source/repos/CIS580/HelloGame/GameProjectThree/Content/bin/Windows/starlight.xnb</DestFile>
-  <DestTime>2022-03-13T22:31:50.6554242-05:00</DestTime>
+  <DestTime>2022-04-29T09:38:52.8985151-05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T11:17:54-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
