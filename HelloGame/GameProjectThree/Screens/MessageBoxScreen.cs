@@ -4,6 +4,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Audio;
 using GameProjectThree.StateManagement;
 
 namespace GameProjectThree.Screens
@@ -18,10 +19,12 @@ namespace GameProjectThree.Screens
         public event EventHandler<PlayerIndexEventArgs> Accepted;
         public event EventHandler<PlayerIndexEventArgs> Rejected;
 
+
         // Constructor lets the caller specify whether to include the standard
         // "A=ok, B=cancel" usage text prompt.
         public MessageBoxScreen(string message, bool includeUsageText = true)
         {
+
             const string usageText = "\nA button, Space, Enter = ok" +
                                      "\nB button, Backspace = cancel";
 

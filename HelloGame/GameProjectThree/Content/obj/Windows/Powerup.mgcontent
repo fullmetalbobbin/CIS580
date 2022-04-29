@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/akdreesen/source/repos/CIS580/HelloGame/GameProjectThree/Content/Powerup.wav</SourceFile>
+  <SourceTime>2022-04-29T17:44:19.091912-05:00</SourceTime>
+  <DestFile>C:/Users/akdreesen/source/repos/CIS580/HelloGame/GameProjectThree/Content/bin/Windows/Powerup.xnb</DestFile>
+  <DestTime>2022-04-29T17:49:52.8690087-05:00</DestTime>
+  <Importer>WavImporter</Importer>
+  <ImporterTime>2020-08-10T11:17:54-05:00</ImporterTime>
+  <Processor>SoundEffectProcessor</Processor>
+  <ProcessorTime>2020-08-10T11:17:54-05:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

@@ -74,6 +74,24 @@
 /processorParam:TextureFormat=Color
 /build:midground.png
 
+#begin Powerup.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Powerup.wav
+
+#begin Powerup3.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Powerup3.wav
+
+#begin PowerupSoft.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:PowerupSoft.wav
+
 #begin starlight.png
 /importer:TextureImporter
 /processor:TextureProcessor

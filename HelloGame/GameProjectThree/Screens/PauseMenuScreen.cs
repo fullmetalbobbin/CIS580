@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.Xna.Framework.Audio;
 
 
 namespace GameProjectThree.Screens
 {
     class PauseMenuScreen : MenuScreen
     {
+
+        
         public PauseMenuScreen() : base("Paused")
         {
             var resumeGameMenuEntry = new MenuEntry("Resume Game");
@@ -17,15 +20,15 @@ namespace GameProjectThree.Screens
 
             MenuEntries.Add(resumeGameMenuEntry);
             MenuEntries.Add(quitGameMenuEntry);
+
         }
 
         private void QuitGameMenuEntrySelected(object sender, PlayerIndexEventArgs e)
         {
             const string message = "Are you sure you want to quit this game?";
-            var confirmQuitMessageBox = new MessageBoxScreen(message);
+            var confirmQuitMessageBox = new MessageBoxScreen( message);
 
             confirmQuitMessageBox.Accepted += ConfirmQuitMessageBoxAccepted;
-
             ScreenManager.AddScreen(confirmQuitMessageBox, ControllingPlayer);
         }
 

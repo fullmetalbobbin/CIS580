@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Audio;
 using GameProjectThree.StateManagement;
 
 namespace GameProjectThree.Screens
@@ -22,6 +23,7 @@ namespace GameProjectThree.Screens
 
         private float _pauseAlpha;
         private readonly InputAction _pauseAction;
+
 
         public GameplayScreen()
         {
@@ -41,14 +43,8 @@ namespace GameProjectThree.Screens
 
             _gameFont = _content.Load<SpriteFont>("akshar");
 
-            // A real game would probably have more content than this sample, so
-            // it would take longer to load. We simulate that by delaying for a
-            // while, giving you a chance to admire the beautiful loading screen.
-            Thread.Sleep(1000);
+            Thread.Sleep(2000);
 
-            // once the load has finished, we use ResetElapsedTime to tell the game's
-            // timing mechanism that we have just finished a very long frame, and that
-            // it should not try to catch up.
             ScreenManager.Game.ResetElapsedTime();
         }
 

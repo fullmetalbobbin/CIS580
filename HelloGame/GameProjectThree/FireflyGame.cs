@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Audio;
+//using Microsoft.Xna.Framework.Media;
 using GameProjectThree.StateManagement;
 using GameProjectThree.Screens;
 
@@ -13,8 +14,9 @@ namespace GameProjectThree
     {
         private readonly ScreenManager screenManager;
         private GraphicsDeviceManager graphics;
-        private SpriteBatch _spriteBatch;
+        private SpriteBatch spriteBatch;
         private Song backgroundMusic;
+        public SoundEffect soundEffect;
 
         private Texture2D background;
         private Texture2D midground;
@@ -84,11 +86,12 @@ namespace GameProjectThree
 
         protected override void LoadContent()
         {
-            _spriteBatch = new SpriteBatch(GraphicsDevice);
+            spriteBatch = new SpriteBatch(GraphicsDevice);
             firefly.LoadContent(Content);
             backgroundMusic = Content.Load<Song>("Firefly4");
             MediaPlayer.IsRepeating = true;
             MediaPlayer.Play(backgroundMusic);
+            soundEffect = Content.Load<SoundEffect>("PowerupSoft");
             // Now resize the height here
 
             // TODO: use this.Content to load your game content here
@@ -133,26 +136,26 @@ namespace GameProjectThree
             Matrix transform;
 
             transform = Matrix.CreateTranslation(0, offsetY * 0.1f, 0);
-            _spriteBatch.Begin(transformMatrix: transform);
-            _spriteBatch.Draw(background, Vector2.Zero, Color.White);
-            _spriteBatch.End();
+            spriteBatch.Begin(transformMatrix: transform);
+            spriteBatch.Draw(background, Vector2.Zero, Color.White);
+            spriteBatch.End();
 
             transform = Matrix.CreateTranslation(0, offsetY * 0.5f, 0);
-            _spriteBatch.Begin(transformMatrix: transform);
-            _spriteBatch.Draw(midground, Vector2.Zero, Color.White);
-            _spriteBatch.End();
+            spriteBatch.Begin(transformMatrix: transform);
+            spriteBatch.Draw(midground, Vector2.Zero, Color.White);
+            spriteBatch.End();
 
             transform = Matrix.CreateTranslation(0, offsetY, 0);
-            _spriteBatch.Begin(transformMatrix: transform);
-            foreach (var star in starlights) star.Draw(gameTime, _spriteBatch);
-            firefly.Draw(gameTime, _spriteBatch);
-            _spriteBatch.Draw(foreground, Vector2.Zero, Color.White);            
-            _spriteBatch.End();
+            spriteBatch.Begin(transformMatrix: transform);
+            foreach (var star in starlights) star.Draw(gameTime, spriteBatch);
+            firefly.Draw(gameTime, spriteBatch);
+            spriteBatch.Draw(foreground, Vector2.Zero, Color.White);            
+            spriteBatch.End();
 
             transform = Matrix.CreateTranslation(0, offsetY * 1.25f, 0);
-            _spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, transformMatrix: transform);
-            _spriteBatch.Draw(superground, Vector2.Zero, Color.YellowGreen);
-            _spriteBatch.End();
+            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, transformMatrix: transform);
+            spriteBatch.Draw(superground, Vector2.Zero, Color.YellowGreen);
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }

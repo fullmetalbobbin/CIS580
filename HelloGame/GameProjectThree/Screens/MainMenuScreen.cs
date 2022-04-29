@@ -2,26 +2,32 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using GameProjectThree.StateManagement;
+using Microsoft.Xna.Framework.Audio;
+
 
 namespace GameProjectThree.Screens
 {
     public class MainMenuScreen : MenuScreen
     {
-        public MainMenuScreen() : base("Main Menu")
-        {
-        var playGameMenuEntry = new MenuEntry("Play");
-        var optionsMenuEntry = new MenuEntry("Options");
-        var exitMenuEntry = new MenuEntry("Exit");
 
-        playGameMenuEntry.Selected += PlayGameMenuEntrySelected;
+        public MainMenuScreen() : base("Main Menu")
+        {            
+            var playGameMenuEntry = new MenuEntry("Play");
+            var optionsMenuEntry = new MenuEntry("Options");
+            var exitMenuEntry = new MenuEntry("Exit");
+
+           
+            playGameMenuEntry.Selected += PlayGameMenuEntrySelected;
             optionsMenuEntry.Selected += OptionsMenuEntrySelected;
             exitMenuEntry.Selected += OnCancel;
 
             MenuEntries.Add(playGameMenuEntry);
             MenuEntries.Add(optionsMenuEntry);
             MenuEntries.Add(exitMenuEntry);
+
         }
 
     private void PlayGameMenuEntrySelected(object sender, PlayerIndexEventArgs e)
@@ -33,7 +39,7 @@ namespace GameProjectThree.Screens
 
     private void OptionsMenuEntrySelected(object sender, PlayerIndexEventArgs e)
     {
-        ScreenManager.AddScreen(new OptionsMenuScreen(), e.PlayerIndex);
+            ScreenManager.AddScreen(new OptionsMenuScreen(), e.PlayerIndex);
     } 
 
     protected override void OnCancel(PlayerIndex playerIndex)
