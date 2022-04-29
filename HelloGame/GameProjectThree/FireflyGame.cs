@@ -3,11 +3,14 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Audio;
+using GameProjectThree.StateManagement;
+
 
 namespace GameProjectThree
 {
     public class FireflyGame : Game
     {
+        private readonly ScreenManager screenManager;
         private GraphicsDeviceManager graphics;
         private SpriteBatch _spriteBatch;
         private Song backgroundMusic;
@@ -28,10 +31,9 @@ namespace GameProjectThree
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
-            _graphics.PreferredBackBufferHeight = 1500;
-            //graphics.PreferredBackBufferHeight = GraphicsDevice.Viewport.Height;
+            graphics.PreferredBackBufferHeight = 1500;
+            //graphics.PreferredBackBufferHeight = GraphicsDevice.Viewport.Height; put in load?
             
-
             graphics.PreferredBackBufferWidth = 500;
             graphics.GraphicsProfile = GraphicsProfile.HiDef;
 
