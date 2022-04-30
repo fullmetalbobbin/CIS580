@@ -66,7 +66,7 @@ namespace GameProjectThree
             firefly.LoadContent(Content);
             backgroundMusic = Content.Load<Song>("Firefly4");
             MediaPlayer.IsRepeating = true;
-            MediaPlayer.Play(backgroundMusic    );
+            MediaPlayer.Play(backgroundMusic );
 
             // TODO: use this.Content to load your game content here
             background = Content.Load<Texture2D>("background");

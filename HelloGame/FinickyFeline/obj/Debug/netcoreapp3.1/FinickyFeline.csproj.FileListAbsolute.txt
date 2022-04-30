@@ -1,0 +1,4 @@
+C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.csprojAssemblyReference.cache
+C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.AssemblyInfoInputs.cache
+C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.AssemblyInfo.cs
+C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\FinickyFeline\obj\Debug\netcoreapp3.1\FinickyFeline.csproj.CoreCompileInputs.cache
