@@ -4,15 +4,23 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/GameProjectThree/Content/akshar.spritefont</File>
     <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/GameProjectThree/Content/background.png</File>
     <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/GameProjectThree/Content/firefly.png</File>
     <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/GameProjectThree/Content/Firefly4.mp3</File>
     <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/GameProjectThree/Content/foreground.png</File>
     <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/GameProjectThree/Content/midground.png</File>
+    <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/GameProjectThree/Content/Powerup.wav</File>
+    <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/GameProjectThree/Content/Powerup3.wav</File>
+    <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/GameProjectThree/Content/PowerupSoft.wav</File>
     <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/GameProjectThree/Content/starlight.png</File>
     <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/GameProjectThree/Content/superground.PNG</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -4,6 +4,7 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+<<<<<<< HEAD
     <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/32x32.png</File>
     <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/clovespritesheet.png</File>
     <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/dosis.spritefont</File>
@@ -11,6 +12,14 @@
     <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/foodspritesheet.png</File>
     <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/mousespritesheet.png</File>
     <File>C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/voomspritesheet.png</File>
+=======
+    <File>C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/32x32.png</File>
+    <File>C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/clovespritesheet.png</File>
+    <File>C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/finickyfelinetitle.png</File>
+    <File>C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/foodspritesheet.png</File>
+    <File>C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/mousespritesheet.png</File>
+    <File>C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/voomspritesheet.png</File>
+>>>>>>> 0b3f06d3d8a38d7d25c6a4e083cf1318b6772198
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

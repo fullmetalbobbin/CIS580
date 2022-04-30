@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>C:/Users/akdreesen/source/repos/CIS580/HelloGame/GameProjectThree/Content/midground.png</SourceFile>
+<<<<<<< HEAD
   <SourceTime>2022-04-29T22:02:57.8319006-05:00</SourceTime>
   <DestFile>C:/Users/akdreesen/source/repos/CIS580/HelloGame/GameProjectThree/Content/bin/Windows/midground.xnb</DestFile>
   <DestTime>2022-04-29T22:08:21.0330725-05:00</DestTime>
+=======
+  <SourceTime>2022-04-29T15:14:40.3454141-05:00</SourceTime>
+  <DestFile>C:/Users/akdreesen/source/repos/CIS580/HelloGame/GameProjectThree/Content/bin/Windows/midground.xnb</DestFile>
+  <DestTime>2022-04-29T17:49:51.5225927-05:00</DestTime>
+>>>>>>> 0b3f06d3d8a38d7d25c6a4e083cf1318b6772198
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T11:17:54-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -10,6 +10,7 @@ namespace GameProjectThree
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
         private Song backgroundMusic;
+        public SoundEffect soundEffect;
 
         private Texture2D background;
         private Texture2D midground;
@@ -67,6 +68,9 @@ namespace GameProjectThree
             backgroundMusic = Content.Load<Song>("Firefly4");
             MediaPlayer.IsRepeating = true;
             MediaPlayer.Play(backgroundMusic );
+            MediaPlayer.Play(backgroundMusic);
+            soundEffect = Content.Load<SoundEffect>("PowerupSoft");
+            // Now resize the height here
 
             // TODO: use this.Content to load your game content here
             background = Content.Load<Texture2D>("background");

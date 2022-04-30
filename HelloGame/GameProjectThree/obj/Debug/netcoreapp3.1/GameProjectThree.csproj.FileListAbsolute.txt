@@ -34,6 +34,10 @@ C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\bin\Debug\netc
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\bin\Debug\netcoreapp3.1\runtimes\win7-arm\native\libuv.dll
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\libuv.dll
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\bin\Debug\netcoreapp3.1\runtimes\win7-x86\native\libuv.dll
+<<<<<<< HEAD
+=======
+C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\obj\Debug\netcoreapp3.1\GameProjectThree.csprojAssemblyReference.cache
+>>>>>>> 0b3f06d3d8a38d7d25c6a4e083cf1318b6772198
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\obj\Debug\netcoreapp3.1\GameProjectThree.AssemblyInfoInputs.cache
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\obj\Debug\netcoreapp3.1\GameProjectThree.AssemblyInfo.cs
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\obj\Debug\netcoreapp3.1\GameProjectThree.csproj.CoreCompileInputs.cache
@@ -41,3 +45,10 @@ C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\obj\Debug\netc
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\obj\Debug\netcoreapp3.1\GameProjectThree.dll
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\obj\Debug\netcoreapp3.1\GameProjectThree.pdb
 C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\obj\Debug\netcoreapp3.1\GameProjectThree.genruntimeconfig.cache
+<<<<<<< HEAD
+=======
+C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\bin\Debug\netcoreapp3.1\Content\akshar.xnb
+C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\bin\Debug\netcoreapp3.1\Content\Powerup.xnb
+C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\bin\Debug\netcoreapp3.1\Content\Powerup3.xnb
+C:\Users\akdreesen\Source\Repos\CIS580\HelloGame\GameProjectThree\bin\Debug\netcoreapp3.1\Content\PowerupSoft.xnb
+>>>>>>> 0b3f06d3d8a38d7d25c6a4e083cf1318b6772198

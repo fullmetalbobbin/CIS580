@@ -1,4 +1,5 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+<<<<<<< HEAD
 "C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/32x32.png","C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/32x32.xnb","TextureProcessor","Texture2DContent",2511,4181,0.1260393
 "C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/clovespritesheet.png","C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/clovespritesheet.xnb","TextureProcessor","Texture2DContent",15545,65621,0.0031972
 "C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/dosis.spritefont","C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/dosis.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21538,0.0845948
@@ -6,3 +7,11 @@ Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Siz
 "C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/foodspritesheet.png","C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/foodspritesheet.xnb","TextureProcessor","Texture2DContent",19755,98389,0.0048543
 "C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/mousespritesheet.png","C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/mousespritesheet.xnb","TextureProcessor","Texture2DContent",10817,163925,0.0055419
 "C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/voomspritesheet.png","C:/Users/akdreesen/Source/Repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/voomspritesheet.xnb","TextureProcessor","Texture2DContent",11242,65621,0.002831
+=======
+"C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/32x32.png","C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/32x32.xnb","TextureProcessor","Texture2DContent",2511,4181,0.1257589
+"C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/clovespritesheet.png","C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/clovespritesheet.xnb","TextureProcessor","Texture2DContent",15545,65621,0.0033325
+"C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/finickyfelinetitle.png","C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/finickyfelinetitle.xnb","TextureProcessor","Texture2DContent",43986,300085,0.0092499
+"C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/foodspritesheet.png","C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/foodspritesheet.xnb","TextureProcessor","Texture2DContent",19755,98389,0.0040281
+"C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/mousespritesheet.png","C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/mousespritesheet.xnb","TextureProcessor","Texture2DContent",10817,163925,0.0056952
+"C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/voomspritesheet.png","C:/Users/akdreesen/source/repos/CIS580/HelloGame/FinickyFeline/Content/bin/Windows/Content/voomspritesheet.xnb","TextureProcessor","Texture2DContent",11242,65621,0.0031671
+>>>>>>> 0b3f06d3d8a38d7d25c6a4e083cf1318b6772198
